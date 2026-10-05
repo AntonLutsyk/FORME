@@ -1,0 +1,5 @@
+:root{
+--space-0:0;--space-0-5:2px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;
+/* Layout — fluid against the .fm-app container (390 → 1440) */
+--page-max:1440px;--content-max:1360px;--gutter:clamp(16px,2.78cqi,40px);/* @kind spacing */--grid-gap:clamp(12px,1.39cqi,20px);--grid-gap-row:clamp(28px,2.78cqi,40px);--section-gap:clamp(72px,7.78cqi,112px);--header-h:clamp(56px,4.72cqi,68px);/* @kind spacing */--bp-mobile:760px;/* @kind other */
+}

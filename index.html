@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/radius.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/elevation.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/components/components.css">
+  <link rel="stylesheet" href="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/styles.css">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,401,500,501,700&amp;f[]=switzer@400,500,600&amp;display=swap">
+  <script src="_ds/forme-design-system-c41e469f-b4c6-4d85-83d9-7754a685f12e/_ds_bundle.js"></script>
+  <style>
+    body{margin:0;background:var(--bg);font-family:'Switzer','Helvetica Neue',sans-serif}
+    a{color:var(--text-primary)}a:hover{color:var(--stone-700)}
+    @keyframes fmRise{from{opacity:0;transform:translateY(28px) scale(.96)}to{opacity:1;transform:none}}
+    @keyframes fmDrop{from{opacity:0;transform:translateY(-160%) rotate(-10deg)}60%{opacity:1}to{opacity:1;transform:none}}
+    @keyframes fmMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @keyframes fmFloat{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-12px) rotate(var(--r))}}
+  .fm-fgroup,.fm-citem,.fm-sheet__link,.fm-header--bordered{border-bottom-color:var(--border)!important}.fm-summary__total,.fm-modal__foot,.fm-drawer__foot{border-top-color:var(--border)!important}.fm-drawer__head{border-bottom-color:var(--border)!important}[data-cat="furniture"] .fm-catpill__thumb{background:url(assets/cat-furniture.png) center/cover!important}[data-cat="lighting"] .fm-catpill__thumb{background:url(assets/cat-lighting.png) center/cover!important}[data-cat="decor"] .fm-catpill__thumb{background:url(assets/cat-decor.png) center/cover!important}[data-cat="kitchen"] .fm-catpill__thumb{background:url(assets/cat-kitchen.png) center/cover!important}[data-cat="workspace"] .fm-catpill__thumb{background:url(assets/cat-workspace.png) center/cover!important}[data-cat="lifestyle"] .fm-catpill__thumb{background:url(assets/cat-lifestyle.png) center/cover!important}[data-cat="gifts"] .fm-catpill__thumb{background:url(assets/cat-gifts.png) center/cover!important}.fm-search__submit.fm-iconbtn,.fm-search__submit{background:var(--text-primary)!important;color:var(--surface)!important;box-shadow:none!important}.fm-search__submit:hover{background:var(--stone-700)!important}.fm-search--compact{background:var(--surface)!important;border:1px solid rgba(0,0,0,0.1)!important}.fm-search--compact:focus-within{border-color:var(--text-primary)!important}.fm-pcard__name{font-weight:400!important}.fm-app{--text-muted:var(--stone-600)}@media (prefers-reduced-motion: reduce){.fm-app *,.fm-app *::before,.fm-app *::after{animation:none!important;transition:none!important}}@container fm (max-width:760px){[data-catpills]{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;align-self:stretch;margin-left:calc(var(--gutter) * -1)!important;margin-right:calc(var(--gutter) * -1)!important;padding:4px var(--gutter);scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}[data-catpills]>*{flex:none}[data-topbar]{position:sticky;top:0;z-index:25;background:var(--surface);padding-top:6px!important;padding-bottom:6px;gap:4px!important}.fm-crumbs{display:none}[data-m-tight]{padding-top:40px!important}.fm-btn--sm{height:44px}.fm-qty{padding:0 2px}.fm-qty__btn{width:44px;height:44px}.fm-iconbtn::after,.fm-swatch::after{content:'';position:absolute;inset:min(0px,calc((100% - 44px) / 2))}.fm-input>input,.fm-search>input{font-size:16px}.fm-sort button{min-height:44px}.fm-dd__opt{min-height:44px}.fm-toasts{bottom:calc(var(--tab-h) + 12px)!important;max-width:calc(100% - 32px)}[data-flink]{min-height:44px!important}[data-rv-img]{width:72px!important}[data-rv-card]{padding:16px!important;gap:14px!important}.fm-drawer__panel{padding-bottom:var(--safe-b)}[data-screen-label="Product"],[data-screen-label="Listing"]{padding-top:4px!important}[data-tap]{min-height:44px;display:inline-flex!important;align-items:center}.fm-check{min-height:44px;font-size:15px}.fm-fgroup__head{min-height:52px}.fm-fgroup__more{min-height:44px}.fm-drawer__body{scrollbar-width:none;overscroll-behavior:contain}.fm-drawer__body::-webkit-scrollbar{display:none}.fm-drawer__foot{padding-bottom:calc(var(--space-5) + var(--safe-b))}[data-flink],[data-tap]{-webkit-tap-highlight-color:transparent}.fm-toasts{bottom:calc(var(--tab-h) + var(--bar-h,0px) + 12px)!important}h1,h2{text-wrap:balance}}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important;scroll-behavior:auto!important}}.fm-app{--safe-b:env(safe-area-inset-bottom,0px);--tab-h:calc(64px + var(--safe-b))}.fm-app[style*="overflow-y"]::-webkit-scrollbar{width:0;height:0}</style>
+</helmet>
+
+<div style="--font-sans:'Switzer','Helvetica Neue',Helvetica,sans-serif;font-family:'Switzer','Helvetica Neue',sans-serif;min-height:100vh;background:var(--bg)">
+<div style="{{ pageStyle }}">
+<div style="{{ frameStyle }}">
+<div ref="{{ scroller }}" class="fm-app" style="{{ scrollStyle }}">
+
+  <div style="display:flex;align-items:flex-start;min-height:100%">
+  <nav aria-label="Main" class="fm-hide-m" style="position:sticky;top:0;height:100vh;width:76px;flex:none;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;padding:20px 0 16px">
+        <div style="flex:1"></div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <sc-for list="{{ railItems }}" as="it" hint-placeholder-count="6">
+        <button type="button" title="{{ it.label }}" aria-label="{{ it.label }}" onClick="{{ it.go }}" style="all:unset;cursor:pointer;position:relative;width:64px;padding:8px 0 7px;box-sizing:border-box;border-radius:16px;display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--text-primary);background:{{ it.bg }};transition:background 140ms cubic-bezier(.2,.7,.2,1)" style-hover="background:var(--stone-200)">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="{{ it.icon }}" size="{{ 20 }}" hint-size="20px,20px"></x-import>
+          <span style="font-size:11px;line-height:1;letter-spacing:-0.006em">{{ it.label }}</span>
+          <sc-if value="{{ it.hasCount }}" hint-placeholder-val="{{ false }}">
+            <span style="position:absolute;top:3px;right:10px;min-width:17px;height:17px;padding:0 4px;box-sizing:border-box;border-radius:9999px;background:var(--text-primary);color:var(--surface);font-size:10px;line-height:17px;text-align:center">{{ it.count }}</span>
+          </sc-if>
+        </button>
+      </sc-for>
+    </div>
+    <div style="flex:1"></div>
+    <button type="button" onClick="{{ onAccount }}" title="{{ accountLabel }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10px;color:var(--text-secondary);max-width:64px;text-align:center">
+      <sc-if value="{{ signedOut }}" hint-placeholder-val="{{ true }}">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="user-round" size="{{ 20 }}" hint-size="20px,20px"></x-import>
+      </sc-if>
+      <sc-if value="{{ signedIn }}" hint-placeholder-val="{{ false }}">
+        <span style="width:30px;height:30px;border-radius:9999px;background:var(--text-primary);color:var(--surface);display:grid;place-items:center;font-size:11px;font-weight:500;letter-spacing:0.02em">{{ userInitials }}</span>
+      </sc-if>
+      <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:64px">{{ accountLabel }}</span>
+    </button>
+  </nav>
+  <main style="{{ panelStyle }}">
+  <sc-if value="{{ showTopBar }}" hint-placeholder-val="{{ false }}">
+    <div data-topbar="1" class="fm-container" style="display:flex;align-items:center;gap:20px;padding-top:20px">
+      <sc-if value="{{ showBack }}" hint-placeholder-val="{{ false }}">
+        <div class="fm-show-m" style="margin-left:-10px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="chevron-left" label="Back" variant="ghost" size="lg" on-click="{{ goBackNav }}" hint-size="48px,48px"></x-import></div>
+      </sc-if>
+      <button type="button" onClick="{{ goHome }}" style="all:unset;cursor:pointer;font-family:'Satoshi','Switzer',sans-serif;font-weight:700;font-size:28px;letter-spacing:-0.065em;color:var(--text-primary);line-height:1">forme</button>
+      <div class="fm-show-m" style="margin-left:auto;display:flex;gap:4px">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="user-round" label="{{ accountLabel }}" size="lg" on-click="{{ onAccount }}" hint-size="48px,48px"></x-import>
+      </div>
+      <div class="fm-hide-m" style="flex:1;max-width:460px;margin-left:auto">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.SearchBar" size="compact" on-submit="{{ onHeaderSearch }}" on-focus="{{ onSearchFocus }}" placeholder="Search lamps, oak, Studio Ferro…" hint-size="100%,44px"></x-import>
+      </div>
+    </div>
+    <div class="fm-container fm-hide-m" style="display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:20px;padding-top:12px;white-space:nowrap">
+      <sc-for list="{{ navCats }}" as="c" hint-placeholder-count="8">
+        <button type="button" onClick="{{ c.go }}" aria-current="{{ c.current }}" style="all:unset;cursor:pointer;min-height:32px;display:flex;align-items:center;font-size:14px;letter-spacing:-0.01em;color:var(--text-primary);text-decoration:{{ c.deco }};text-underline-offset:6px;text-decoration-thickness:1px" style-hover="color:var(--stone-600)">{{ c.label }}</button>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <!-- ============ HOME ============ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <section data-screen-label="Home" style="padding:24px var(--gutter) 0;display:flex;flex-direction:column;align-items:center">
+      <div class="fm-show-m" style="align-self:stretch;display:flex;align-items:center;justify-content:space-between;gap:4px;margin:-12px 0 4px">
+        <span></span>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="user-round" label="{{ accountLabel }}" size="lg" on-click="{{ onAccount }}" hint-size="48px,48px"></x-import>
+      </div>
+      <div style="position:relative;width:100%;max-width:none;height:clamp(270px,30cqi,430px)">{{ hero }}</div>
+      <h1 style="margin:-6px 0 0;font-family:'Satoshi','Switzer',sans-serif;font-weight:700;font-size:clamp(60px,7.5cqi,108px);line-height:0.9;letter-spacing:-0.07em;color:var(--text-primary)">forme</h1>
+      <p style="margin:14px 0 0;max-width:460px;text-align:center;font-size:17px;line-height:1.45;letter-spacing:-0.012em;color:var(--text-secondary);text-wrap:balance">Furniture, lighting and objects from independent makers — chosen one piece at a time.</p>
+      <div style="width:100%;max-width:580px;margin-top:28px">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.SearchBar" on-submit="{{ onHeaderSearch }}" placeholder="Search lamps, oak, Studio Ferro…" hint-size="100%,56px"></x-import>
+      </div>
+      <div data-catpills="1" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;max-width:920px">
+        <sc-for list="{{ catRows }}" as="c" hint-placeholder-count="8">
+          <div data-cat="{{ c.id }}" style="display:flex"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.CategoryPill" label="{{ c.label }}" tone="{{ c.tone }}" on-click="{{ c.open }}" hint-size="120px,44px"></x-import></div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-m-tight="1" style="padding-top:72px;position:relative">
+      <div ref="{{ catRail }}" class="fm-scroll-x" style="gap:16px;padding:0 var(--gutter);scroll-padding:0 var(--gutter);scroll-behavior:smooth">
+        <sc-for list="{{ catBlocks }}" as="b" hint-placeholder-count="4">
+          <div style="width:clamp(264px,24cqi,340px);display:flex;flex-direction:column;gap:12px">
+            <button type="button" onClick="{{ b.open }}" style="all:unset;cursor:pointer;align-self:flex-start;display:flex;gap:6px;align-items:center;font-family:'Satoshi','Switzer',sans-serif;font-size:var(--fs-h3);font-weight:500;line-height:1.15;letter-spacing:-0.03em">
+              {{ b.label }}
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="chevron-right" size="{{ 16 }}" hint-size="16px,16px"></x-import>
+            </button>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px 8px">
+              <sc-for list="{{ b.subs }}" as="t" hint-placeholder-count="4">
+                <button type="button" onClick="{{ t.open }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-width:0">
+                  <div style="border-radius:16px;overflow:hidden">
+                    <div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)">
+                      <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" tone="{{ t.tone }}" src="{{ t.src }}" ratio="1 / 1" radius="0px" hint-size="100%,160px"></x-import>
+                    </div>
+                  </div>
+                  <span style="font-size:13px;letter-spacing:-0.006em;color:var(--text-secondary)">{{ t.label }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div class="fm-hide-m" style="position:absolute;right:20px;top:calc(72px + 50% - 4px)">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="chevron-right" label="More categories" variant="surface" size="sm" on-click="{{ catRailNext }}" hint-size="32px,32px"></x-import>
+      </div>
+    </section>
+
+    <section class="fm-container" style="padding-top:var(--section-gap)">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px">
+        <button type="button" onClick="{{ goNew }}" style="all:unset;cursor:pointer;display:flex;gap:8px;align-items:center;font-family:'Satoshi','Switzer',sans-serif;font-size:var(--fs-h2);font-weight:500;line-height:1.05;letter-spacing:-0.035em">
+          New this week.
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="arrow-right" size="{{ 22 }}" hint-size="16px,16px"></x-import>
+        </button>
+        <div class="fm-hide-m" style="display:flex;gap:8px">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="chevron-left" label="Previous" variant="surface" size="sm" on-click="{{ railPrev }}" hint-size="32px,32px"></x-import>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="chevron-right" label="Next" variant="surface" size="sm" on-click="{{ railNext }}" hint-size="32px,32px"></x-import>
+        </div>
+      </div>
+      <div ref="{{ rail }}" class="fm-scroll-x" style="gap:16px;scroll-behavior:smooth">
+        <sc-for list="{{ newProducts }}" as="item" hint-placeholder-count="5">
+          <div style="width:clamp(200px,19cqi,270px)">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ProductCard" product="{{ item.p }}" wishlisted="{{ item.wished }}" on-wishlist="{{ item.onWish }}" on-click="{{ item.open }}" on-quick-add="{{ item.add }}" size="sm" hint-size="100%,360px"></x-import>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-screen-label="Home collection" style="padding-top:var(--section-gap)">
+      <div class="fm-container" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 40px;margin-bottom:32px">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:560px">
+          
+          <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Warm Light.</h2>
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.5;color:var(--text-secondary);text-wrap:pretty">Lamps for the long evenings — travertine, opal glass and paper, chosen to be lit at dusk rather than noon.</p>
+        </div>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" icon-right="arrow-right" on-click="{{ warm.open }}" hint-size="190px,44px">Shop the collection</x-import>
+      </div>
+      <div class="fm-scroll-x" style="gap:16px;padding:0 var(--gutter);scroll-padding:0 var(--gutter);align-items:flex-end">
+        <button type="button" onClick="{{ warm.a.open }}" style="all:unset;cursor:pointer;flex:none;width:clamp(260px,38cqi,520px);display:flex;flex-direction:column;gap:10px">
+          <div style="border-radius:28px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ warm.a.image }}" alt="{{ warm.a.name }}" ratio="4 / 5" radius="0px" hint-size="100%,200px"></x-import></div></div>
+          <span style="display:flex;justify-content:space-between;gap:12px;font-size:14px"><span>{{ warm.a.name }}</span><span style="color:var(--text-secondary)">{{ warm.a.priceLabel }}</span></span>
+        </button>
+        <button type="button" onClick="{{ warm.b.open }}" style="all:unset;cursor:pointer;flex:none;width:clamp(190px,22cqi,300px);display:flex;flex-direction:column;gap:10px;margin-bottom:clamp(40px,8cqi,120px)">
+          <div style="border-radius:20px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ warm.b.image }}" alt="{{ warm.b.name }}" ratio="1 / 1" radius="0px" hint-size="100%,200px"></x-import></div></div>
+          <span style="display:flex;justify-content:space-between;gap:12px;font-size:14px"><span>{{ warm.b.name }}</span><span style="color:var(--text-secondary)">{{ warm.b.priceLabel }}</span></span>
+        </button>
+        <button type="button" onClick="{{ warm.c.open }}" style="all:unset;cursor:pointer;flex:none;width:clamp(190px,22cqi,300px);display:flex;flex-direction:column;gap:10px">
+          <div style="border-radius:20px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ warm.c.image }}" alt="{{ warm.c.name }}" ratio="4 / 5" radius="0px" hint-size="100%,200px"></x-import></div></div>
+          <span style="display:flex;justify-content:space-between;gap:12px;font-size:14px"><span>{{ warm.c.name }}</span><span style="color:var(--text-secondary)">{{ warm.c.priceLabel }}</span></span>
+        </button>
+        <button type="button" onClick="{{ warm.d.open }}" style="all:unset;cursor:pointer;flex:none;width:clamp(160px,17cqi,240px);display:flex;flex-direction:column;gap:10px;margin-bottom:clamp(24px,5cqi,72px)">
+          <div style="border-radius:20px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ warm.d.image }}" alt="{{ warm.d.name }}" ratio="4 / 5" radius="0px" hint-size="100%,200px"></x-import></div></div>
+          <span style="display:flex;justify-content:space-between;gap:12px;font-size:14px"><span>{{ warm.d.name }}</span><span style="color:var(--text-secondary)">{{ warm.d.priceLabel }}</span></span>
+        </button>
+      </div>
+    </section>
+
+    <section data-screen-label="Home materials" style="padding-top:var(--section-gap)">
+      <div class="fm-container" style="margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);line-height:1.05;letter-spacing:-0.03em">Start with a material.</h2>
+      </div>
+      <div class="fm-scroll-x" style="gap:16px;padding:0 var(--gutter);scroll-padding:0 var(--gutter)">
+        <sc-for list="{{ materials }}" as="m" hint-placeholder-count="6">
+          <button type="button" onClick="{{ m.go }}" style="all:unset;cursor:pointer;flex:none;width:clamp(150px,15cqi,210px);display:flex;flex-direction:column;gap:10px">
+            <div style="border-radius:9999px;overflow:hidden;aspect-ratio:1 / 1;background:var(--surface-sunken)">
+              <div style="transform:scale(2.3);transform-origin:50% 56%;transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(2.45)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ m.src }}" alt="" ratio="1 / 1" radius="0px" hint-size="100%,200px"></x-import></div>
+            </div>
+            <span style="display:flex;flex-direction:column;gap:2px;text-align:center">
+              <span style="font-size:16px;letter-spacing:-0.012em">{{ m.label }}</span>
+              <span style="font-size:13px;color:var(--text-muted)">{{ m.types }}</span>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-screen-label="Home maker" class="fm-container" style="padding-top:var(--section-gap)">
+      <div style="display:flex;flex-wrap:wrap;gap:40px 64px;padding-top:40px;border-top:1px solid var(--border)">
+        <div style="flex:5 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:20px">
+          <div style="font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted)">{{ kiln.location }} · The maker</div>
+          <button type="button" onClick="{{ kiln.open }}" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:20px">
+            <div style="width:112px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ kiln.photo }}" alt="{{ kiln.name }}" ratio="140 / 76" radius="12px" hint-size="112px,61px"></x-import></div>
+            <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);line-height:1.05;letter-spacing:-0.035em">{{ kiln.name }}</span>
+          </button>
+          <p style="margin:0;max-width:520px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:calc(var(--fs-h3) * 0.85);line-height:1.4;letter-spacing:-0.015em;text-wrap:pretty">{{ kiln.story }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" icon-right="arrow-right" on-click="{{ kiln.open }}" hint-size="160px,44px">Visit the studio</x-import>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="{{ kiln.followVariant }}" on-click="{{ kiln.follow }}" hint-size="110px,44px">{{ kiln.followLabel }}</x-import>
+          </div>
+        </div>
+        <div style="flex:7 1 0;min-width:min(100%,300px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,1.4cqi,16px);align-content:start">
+          <sc-for list="{{ kilnTrio }}" as="k" hint-placeholder-count="3">
+            <button type="button" onClick="{{ k.open }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div style="border-radius:20px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ k.image }}" alt="{{ k.name }}" ratio="4 / 5" radius="0px" hint-size="100%,200px"></x-import></div></div>
+              <span style="display:flex;flex-direction:column;gap:2px;font-size:14px"><span>{{ k.name }}</span><span style="color:var(--text-secondary)">{{ k.priceLabel }}</span></span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ============ MAKERS (home excerpt + full page) ============ -->
+  <sc-if value="{{ showMakers }}" hint-placeholder-val="{{ true }}">
+    <section data-screen-label="Makers" class="fm-container" style="padding-top:{{ makersTop }}">
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px">
+        
+        <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:{{ makersSize }};line-height:1;letter-spacing:-0.03em">Makers worth knowing.</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:1px solid var(--border)">
+        <sc-for list="{{ makerRows }}" as="m" hint-placeholder-count="5">
+          <div style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;padding:16px 0;border-top:1px solid var(--border)">
+            <button type="button" onClick="{{ m.open }}" style="all:unset;cursor:pointer;flex:0 1 420px;min-width:280px;display:flex;align-items:center;gap:28px">
+              <div style="width:140px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ m.photo }}" alt="{{ m.name }}" ratio="140 / 76" radius="12px" hint-size="140px,76px"></x-import></div>
+              <span style="display:flex;flex-direction:column;gap:8px;min-width:0">
+                <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);line-height:1.05;letter-spacing:-0.03em">{{ m.name }}</span>
+                <span style="font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted)">{{ m.meta }}</span>
+              </span>
+            </button>
+            <button type="button" onClick="{{ m.open }}" class="fm-hide-m" style="all: unset; cursor: pointer; flex: 1 1 260px; min-width: 0; display: flex; align-items: center; justify-content: flex-start; gap: 24px">
+              <span style="min-width:0;flex:1;max-width:380px;font-size:15px;line-height:1.45;color:var(--text-secondary);text-wrap:pretty;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ m.blurb }}</span>
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="arrow-right" size="{{ 16 }}" hint-size="16px,16px"></x-import>
+            </button>
+            <div class="fm-hide-m" style="display:flex;gap:6px;width:180px;flex:none">
+              <sc-for list="{{ m.swatches }}" as="sw" hint-placeholder-count="3">
+                <div style="width:56px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ sw }}" ratio="1 / 1" radius="12px" hint-size="56px,56px"></x-import></div>
+              </sc-for>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="{{ m.followVariant }}" size="sm" on-click="{{ m.follow }}" hint-size="100px,36px">{{ m.followLabel }}</x-import>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:24px">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" icon-right="arrow-right" on-click="{{ goMakers }}" hint-size="160px,44px">All makers</x-import>
+        </div>
+      </sc-if>
+    </section>
+  </sc-if>
+
+  <!-- ============ LISTING (category / collection / maker) ============ -->
+  <sc-if value="{{ isListing }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Listing" class="fm-container" style="padding-top:24px">
+      <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Breadcrumbs" items="{{ crumbs }}" hint-size="100%,20px"></x-import>
+      <div style="display:flex;flex-direction:column;align-items:{{ lhAlign }};text-align:{{ lhText }};gap:16px;margin:{{ lhMargin }};max-width:1100px">
+        
+        <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:{{ lhSize }};line-height:0.96;letter-spacing:-0.035em;text-wrap:balance">{{ listing.title }}</h1>
+        <p style="margin:0;max-width:720px;font-size:var(--fs-body-lg);line-height:1.45;color:var(--text-secondary);text-wrap:pretty">{{ listing.blurb }}</p>
+        <sc-if value="{{ listing.hasStory }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:12px 0 0;max-width:760px;font-size:var(--fs-body-lg);line-height:1.5;color:var(--text-primary);text-wrap:pretty">{{ listing.story }}</p>
+        </sc-if>
+        <sc-if value="{{ listing.isMaker }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;gap:10px;justify-content:center;margin-top:12px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="{{ listing.followVariant }}" size="sm" on-click="{{ listing.follow }}" hint-size="110px,36px">{{ listing.followLabel }}</x-import>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="display:flex;margin-top:40px;border-top:1px solid var(--border);align-items:stretch">
+        <aside class="fm-hide-m" style="width:240px;flex:none;padding:24px 28px 0 0;border-right:1px solid var(--border)">
+          <div style="position:sticky;top:24px;display:flex;flex-direction:column;gap:8px">
+          <sc-if value="{{ showMakerFilter }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Maker" type="checkbox" options="{{ makerOpts }}" value="{{ fMakers }}" on-change="{{ onMakers }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+          </sc-if>
+          <sc-if value="{{ showType }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Type" type="checkbox" options="{{ typeOpts }}" value="{{ fType }}" on-change="{{ onType }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+          </sc-if>
+          <sc-if value="{{ showMat }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Material" type="checkbox" options="{{ matOpts }}" value="{{ fMat }}" on-change="{{ onMat }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+          </sc-if>
+          <sc-if value="{{ showCol }}" hint-placeholder-val="{{ false }}">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Colour" type="checkbox" options="{{ colOpts }}" value="{{ fCol }}" on-change="{{ onCol }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+          </sc-if>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Price" type="pills" options="{{ priceOpts }}" value="{{ fPrice }}" on-change="{{ onPrice }}" default-open="{{ true }}" hint-size="100%,120px"></x-import>
+          </div>
+        </aside>
+        <div style="flex:1;min-width:0;padding-top:24px;padding-left:clamp(0px, calc((100cqw - 760px) * 1000), 28px)">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px">
+            <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+              <div class="fm-show-m">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" size="sm" icon-left="sliders-horizontal" on-click="{{ openSheet }}" hint-size="100px,36px">{{ filterBtnLabel }}</x-import>
+              </div>
+              <sc-for list="{{ activeTags }}" as="t" hint-placeholder-count="0">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Tag" on-remove="{{ t.remove }}" hint-size="90px,30px">{{ t.label }}</x-import>
+              </sc-for>
+              <sc-if value="{{ hasFilters }}" hint-placeholder-val="{{ false }}">
+                <button type="button" onClick="{{ clearFilters }}" style="all:unset;cursor:pointer;font-size:13px;color:var(--text-secondary);text-decoration:underline;text-underline-offset:3px">Clear all</button>
+              </sc-if>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.SortControl" value="{{ sort }}" on-change="{{ onSort }}" result-count="{{ resultCount }}" hint-size="260px,36px"></x-import>
+          </div>
+
+          <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+            <div class="fm-grid" style="--cols:3;--cols-m:2">
+              <sc-for list="{{ results }}" as="item" hint-placeholder-count="6">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ProductCard" product="{{ item.p }}" wishlisted="{{ item.wished }}" on-wishlist="{{ item.onWish }}" on-click="{{ item.open }}" on-quick-add="{{ item.add }}" hint-size="100%,420px"></x-import>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:64px 0;display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+              <h3 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);letter-spacing:-0.03em">Nothing matches those filters — yet.</h3>
+              <p style="margin:0;color:var(--text-secondary)">Try a wider price range, or another maker.</p>
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" on-click="{{ clearFilters }}" hint-size="140px,44px">Clear filters</x-import>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+    <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Drawer" open="{{ sheetOpen }}" on-close="{{ closeSheet }}" side="bottom" title="Filters" hint-size="0px,0px">
+      <div style="display:flex;flex-direction:column;gap:8px;padding-bottom:16px">
+        <sc-if value="{{ showMakerFilter }}" hint-placeholder-val="{{ true }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Maker" type="checkbox" options="{{ makerOpts }}" value="{{ fMakers }}" on-change="{{ onMakers }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+        </sc-if>
+        <sc-if value="{{ showType }}" hint-placeholder-val="{{ true }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Type" type="checkbox" options="{{ typeOpts }}" value="{{ fType }}" on-change="{{ onType }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+        </sc-if>
+        <sc-if value="{{ showMat }}" hint-placeholder-val="{{ true }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Material" type="checkbox" options="{{ matOpts }}" value="{{ fMat }}" on-change="{{ onMat }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+        </sc-if>
+        <sc-if value="{{ showCol }}" hint-placeholder-val="{{ false }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Colour" type="checkbox" options="{{ colOpts }}" value="{{ fCol }}" on-change="{{ onCol }}" default-open="{{ true }}" hint-size="100%,200px"></x-import>
+        </sc-if>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.FilterGroup" title="Price" type="pills" options="{{ priceOpts }}" value="{{ fPrice }}" on-change="{{ onPrice }}" default-open="{{ true }}" hint-size="100%,120px"></x-import>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" full-width="{{ true }}" on-click="{{ closeSheet }}" hint-size="100%,44px">{{ showResultsLabel }}</x-import>
+      </div>
+    </x-import>
+  </sc-if>
+
+  <!-- ============ PRODUCT ============ -->
+  <sc-if value="{{ isProduct }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Product" class="fm-container" style="padding-top:24px">
+      <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Breadcrumbs" items="{{ crumbs }}" hint-size="100%,20px"></x-import>
+      <div style="display:flex;flex-wrap:wrap;gap:32px 56px;margin-top:24px;align-items:flex-start">
+        <div style="flex:7 1 0;min-width:min(100%,340px)">
+          <div style="border-radius:28px;overflow:hidden;aspect-ratio:1 / 1;background:var(--surface-sunken)">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ prod.image }}" alt="{{ prod.name }}" ratio="1 / 1" radius="0px" hint-size="100%,400px"></x-import>
+          </div>
+        </div>
+        <div style="flex:5 1 0;min-width:min(100%,340px);position:sticky;top:24px;display:flex;flex-direction:column;gap:22px">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <button type="button" data-tap="1" onClick="{{ prod.openMaker }}" style="all:unset;cursor:pointer;align-self:flex-start;font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-secondary);text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:4px">{{ prod.makerLine }}</button>
+            <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.03em;text-wrap:balance">{{ prod.name }}</h1>
+            <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Price" amount="{{ prod.price }}" compare-at="{{ prod.compareAt }}" show-discount="{{ true }}" size="lg" hint-size="120px,28px"></x-import>
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Rating" value="{{ prod.rating }}" count="{{ prod.reviews }}" hint-size="140px,20px"></x-import>
+            </div>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:var(--text-secondary);text-wrap:pretty">{{ prod.desc }}</p>
+          <sc-if value="{{ prod.hasColors }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.VariantPicker" label="Finish" type="swatch" options="{{ prod.finishOpts }}" value="{{ prod.variant }}" on-change="{{ onVariant }}" hint-size="100%,72px"></x-import>
+          </sc-if>
+          <div style="display:flex;gap:10px;align-items:center">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.QuantityControl" value="{{ qty }}" on-change="{{ onQty }}" hint-size="120px,48px"></x-import>
+            <div class="fm-hide-m" style="flex:1;min-width:0;display:flex">
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="accent" size="lg" full-width="{{ true }}" style="width:100%" on-click="{{ addCurrent }}" hint-size="100%,52px">{{ addLabel }}</x-import>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.WishlistButton" variant="outline" size="lg" active="{{ prod.wished }}" on-change="{{ prod.onWish }}" hint-size="52px,52px"></x-import>
+          </div>
+          <sc-if value="{{ prod.scarce }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:-8px 0 0;font-size:13px;color:var(--text-secondary)">Only 3 left — made in batches of twelve.</p>
+          </sc-if>
+          <div style="display:flex;flex-direction:column;border-top:1px solid var(--border)">
+            <sc-for list="{{ prod.service }}" as="s" hint-placeholder-count="3">
+              <div style="display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="{{ s.icon }}" size="{{ 18 }}" hint-size="18px,18px"></x-import>
+                <span>{{ s.text }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <dl style="margin:0;display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px 16px;font-size:14px">
+            <sc-for list="{{ prod.specs }}" as="s" hint-placeholder-count="4">
+              <dt style="color:var(--text-muted)">{{ s.k }}</dt>
+              <dd style="margin:0">{{ s.v }}</dd>
+            </sc-for>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="fm-container" style="padding-top:var(--section-gap)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px 64px;align-items:center">
+        <div style="flex:5 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:center;gap:6px;font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted)">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="map-pin" size="{{ 14 }}" hint-size="14px,14px"></x-import>{{ maker.location }} · The maker
+          </div>
+          <div style="display:flex;align-items:center;gap:20px">
+            <button type="button" onClick="{{ maker.open }}" style="all:unset;cursor:pointer;width:140px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ maker.photo }}" alt="{{ maker.name }}" ratio="140 / 104" radius="20px" hint-size="140px,104px"></x-import></button>
+            <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+              <button type="button" onClick="{{ maker.open }}" style="all:unset;cursor:pointer"><h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);line-height:1.05;letter-spacing:-0.035em">{{ maker.name }}</h2></button>
+              <div style="display:flex;gap:8px">
+                <sc-for list="{{ maker.swatches }}" as="sw" hint-placeholder-count="3">
+                  <div style="width:40px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ sw }}" ratio="1 / 1" radius="10px" hint-size="40px,40px"></x-import></div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:7 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0;max-width:520px;font-family:'Satoshi','Switzer',sans-serif;font-weight:400;font-size:calc(var(--fs-h3) * 0.85);line-height:1.45;letter-spacing:-0.015em;color:var(--stone-700);text-wrap:pretty">{{ maker.story }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" icon-right="arrow-right" on-click="{{ maker.open }}" hint-size="160px,44px">Visit the studio</x-import>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="{{ maker.followVariant }}" on-click="{{ maker.follow }}" hint-size="120px,44px">{{ maker.followLabel }}</x-import>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-screen-label="Product reviews" class="fm-container" style="padding-top:var(--section-gap)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px 48px;align-items:flex-start">
+        <div style="flex:4 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:14px">
+          
+          <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.035em;line-height:1.05;font-size:var(--fs-h2);text-wrap:balance">Real homes.<br>Real impressions.</h2>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Rating" value="{{ prod.rating }}" count="{{ prod.reviews }}" hint-size="140px,20px"></x-import>
+          <p style="margin:0;max-width:320px;font-size:14px;line-height:1.5;color:var(--text-secondary);text-wrap:pretty">From verified buyers only. We publish every review, including the critical ones.</p>
+        </div>
+        <div style="flex:8 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:20px;align-items:center">
+          <div style="align-self:stretch;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+            <sc-for list="{{ prodReviews }}" as="rv" hint-placeholder-count="2">
+              <div data-rv-card="1" style="display:flex;gap:16px;padding:20px;background:var(--surface,#fff);border:1px solid var(--border);border-radius:20px;min-width:0">
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:12px">
+                  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Rating" value="{{ rv.stars }}" size="sm" hint-size="90px,16px"></x-import>
+                  <p style="margin:0;font-size:15px;line-height:1.45;color:var(--text-primary);text-wrap:pretty">{{ rv.text }}</p>
+                  <span style="margin-top:auto;font-size:13px;color:var(--text-muted)">{{ rv.who }}</span>
+                </div>
+                <div data-rv-img="1" style="width:104px;flex:none;align-self:flex-start"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ rv.photo }}" ratio="1 / 1" radius="12px" hint-size="104px,104px"></x-import></div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="arrow-left" label="Previous reviews" variant="surface" size="sm" on-click="{{ revPrev }}" hint-size="36px,36px"></x-import>
+            <div style="display:flex;align-items:center">
+              <sc-for list="{{ revDots }}" as="d" hint-placeholder-count="3">
+                <button type="button" aria-label="{{ d.label }}" aria-current="{{ d.current }}" onClick="{{ d.go }}" style="all:unset;cursor:pointer;width:20px;height:44px;display:grid;place-items:center"><span style="width:7px;height:7px;border-radius:9999px;background:{{ d.color }};transition:background 220ms cubic-bezier(.2,.7,.2,1)"></span></button>
+              </sc-for>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.IconButton" icon="arrow-right" label="Next reviews" variant="surface" size="sm" on-click="{{ revNext }}" hint-size="36px,36px"></x-import>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fm-container" style="padding-top:var(--section-gap)">
+      <h2 style="margin:0 0 28px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h2);line-height:1.05;letter-spacing:-0.03em">{{ relatedTitle }}</h2>
+      <div class="fm-grid" style="--cols:4;--cols-m:2">
+        <sc-for list="{{ related }}" as="item" hint-placeholder-count="4">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ProductCard" product="{{ item.p }}" wishlisted="{{ item.wished }}" on-wishlist="{{ item.onWish }}" on-click="{{ item.open }}" on-quick-add="{{ item.add }}" hint-size="100%,420px"></x-import>
+        </sc-for>
+      </div>
+    </section>
+
+    <div class="fm-show-m" style="position:sticky;bottom:0;z-index:20;margin-top:40px;padding:12px 16px calc(12px + var(--safe-b));background:var(--surface);border-top:1px solid var(--border);display:flex;gap:12px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+        <span style="font-size:13px;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ prod.name }}</span>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Price" amount="{{ prod.price }}" hint-size="70px,20px"></x-import>
+      </div>
+      <div style="flex:1">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="accent" full-width="{{ true }}" on-click="{{ addCurrent }}" hint-size="100%,44px">Add to cart</x-import>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ SEARCH ============ -->
+  <sc-if value="{{ isSearch }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Search" class="fm-container" style="padding-top:40px">
+      <x-import component-from-global-scope="FORMEDesignSystem_c41e46.SearchBar" size="lg" placeholder="Search pieces, makers, materials" value="{{ searchQ }}" on-change="{{ onSearchChange }}" on-submit="{{ onSearchChange }}" auto-focus="{{ true }}" hint-size="100%,68px"></x-import>
+      <sc-if value="{{ searchEmptyQuery }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-wrap:wrap;gap:40px 48px;margin-top:48px">
+          <div style="flex:5 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:14px">
+            <div style="font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted)">Recent</div>
+            <sc-for list="{{ recent }}" as="t" hint-placeholder-count="3">
+              <button type="button" onClick="{{ t.go }}" style="all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;font-size:16px;color:var(--text-primary)">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="history" size="{{ 16 }}" hint-size="16px,16px"></x-import>{{ t.label }}
+              </button>
+            </sc-for>
+          </div>
+          <div style="flex:7 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:6px">
+            <div style="font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted);margin-bottom:8px">Browse a room</div>
+            <sc-for list="{{ catRows }}" as="c" hint-placeholder-count="8">
+              <button type="button" onClick="{{ c.open }}" style="all:unset;cursor:pointer;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h3);line-height:1.3;letter-spacing:-0.02em" style-hover="color:var(--stone-600)">{{ c.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ searchHasResults }}" hint-placeholder-val="{{ false }}">
+        <sc-if value="{{ hasSuggest }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+            <sc-for list="{{ suggest }}" as="sg" hint-placeholder-count="2">
+              <button type="button" onClick="{{ sg.go }}" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:9999px;border:1px solid var(--border);font-size:14px;color:var(--text-primary)" style-hover="border-color:var(--text-primary)"><span style="color:var(--text-muted)">{{ sg.kind }}</span>{{ sg.label }}</button>
+            </sc-for>
+          </div>
+        </sc-if>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin:32px 0 24px">
+          <span style="font-size:14px;color:var(--text-secondary)">{{ searchCountLabel }}</span>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.SortControl" value="{{ sort }}" on-change="{{ onSort }}" hint-size="200px,36px"></x-import>
+        </div>
+        <div class="fm-grid" style="--cols:4;--cols-m:2">
+          <sc-for list="{{ searchResults }}" as="item" hint-placeholder-count="4">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ProductCard" product="{{ item.p }}" wishlisted="{{ item.wished }}" on-wishlist="{{ item.onWish }}" on-click="{{ item.open }}" on-quick-add="{{ item.add }}" hint-size="100%,420px"></x-import>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ searchNone }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:64px 0;display:flex;flex-direction:column;gap:16px">
+          <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.03em">{{ searchNoneTitle }}</h2>
+          <p style="margin:0;color:var(--text-secondary)">Try a material or a maker instead.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ popular }}" as="t" hint-placeholder-count="4">
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" size="sm" on-click="{{ t.go }}" hint-size="100px,36px">{{ t.label }}</x-import>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+    </section>
+  </sc-if>
+
+  <!-- ============ CART + WISHLIST ============ -->
+  <sc-if value="{{ isCart }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Cart" class="fm-container" style="padding-top:40px">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:28px">
+        <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+          <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Your cart</h1>
+          <span style="font-size:15px;color:var(--text-secondary)">{{ cartCountLabel }}</span>
+        </div>
+        <button type="button" onClick="{{ goBack }}" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:8px;min-height:44px;font-size:15px;letter-spacing:-0.012em;color:var(--text-primary)">
+          <span style="text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px">Continue shopping</span>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="arrow-right" size="{{ 16 }}" hint-size="16px,16px"></x-import>
+        </button>
+      </div>
+      <sc-if value="{{ cartHasItems }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-wrap:wrap;gap:40px 64px;align-items:flex-start">
+          <div style="flex:7 1 0;min-width:min(100%,340px);display:flex;flex-direction:column;border-top:1px solid var(--border)">
+            <sc-for list="{{ cartRows }}" as="l" hint-placeholder-count="2">
+              <div style="display:flex;gap:clamp(16px,3cqi,28px);padding:24px 0;border-bottom:1px solid var(--border)">
+                <button type="button" onClick="{{ l.open }}" aria-label="{{ l.name }}" style="all:unset;cursor:pointer;flex:none;width:clamp(104px,15cqi,160px)">
+                  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ l.image }}" ratio="1 / 1" radius="20px" hint-size="100%,160px"></x-import>
+                </button>
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+                  <div style="display:flex;justify-content:space-between;gap:16px;align-items:flex-start">
+                    <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+                      <span style="font-size:14px;color:var(--text-muted)">{{ l.brand }}</span>
+                      <button type="button" onClick="{{ l.open }}" style="all:unset;cursor:pointer;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:clamp(17px,2cqi,20px);line-height:1.25;letter-spacing:-0.02em;color:var(--text-primary)">{{ l.name }}</button>
+                      <span style="font-size:14px;color:var(--text-secondary)">{{ l.variant }}</span>
+                    </div>
+                    <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:clamp(17px,2cqi,20px);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;white-space:nowrap">{{ l.total }}</span>
+                  </div>
+                  <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px 16px;flex-wrap:wrap">
+                    <x-import component-from-global-scope="FORMEDesignSystem_c41e46.QuantityControl" value="{{ l.qty }}" on-change="{{ l.onQty }}" hint-size="120px,44px"></x-import>
+                    <div style="display:flex;align-items:center;gap:20px">
+                      <button type="button" onClick="{{ l.onWish }}" style="all:unset;cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14px;color:var(--text-secondary)" style-hover="color:var(--text-primary)">{{ l.saveLabel }}</button>
+                      <button type="button" onClick="{{ l.remove }}" style="all:unset;cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14px;color:var(--text-secondary);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px" style-hover="color:var(--text-primary)">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <aside style="flex:4 1 0;min-width:min(100%,300px);position:sticky;top:24px;box-sizing:border-box;border-radius:28px;background:var(--bg);padding:28px;display:flex;flex-direction:column">
+            <h2 style="margin:0 0 6px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:20px;letter-spacing:-0.02em">Summary</h2>
+            <div style="display:flex;flex-direction:column;gap:14px;padding:18px 0 22px;font-size:15px;letter-spacing:-0.012em;font-variant-numeric:tabular-nums">
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">Subtotal</span><span>{{ subtotalLabel }}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">Shipping</span><span style="display:flex;gap:10px"><sc-if value="{{ shipFree }}" hint-placeholder-val="{{ true }}"><s style="color:var(--text-muted)">$12</s></sc-if>{{ shipLabel }}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">Tax</span><span style="color:var(--text-secondary)">Calculated at checkout</span></div>
+              <sc-if value="{{ shipPaid }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+                  <span style="font-size:14px;color:var(--text-primary)">{{ shipStatus }}</span>
+                  <div style="height:4px;border-radius:9999px;background:var(--stone-200);overflow:hidden"><div style="height:100%;border-radius:9999px;background:var(--text-primary);width:{{ freePct }}"></div></div>
+                </div>
+              </sc-if>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 0 22px;border-top:1px solid var(--border)">
+              <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:24px;letter-spacing:-0.025em">Total</span>
+              <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:24px;letter-spacing:-0.025em;font-variant-numeric:tabular-nums">{{ totalLabel }}</span>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="accent" size="lg" full-width="{{ true }}" icon-right="arrow-right" on-click="{{ checkout }}" hint-size="100%,56px">Checkout</x-import>
+            <div style="display:flex;flex-direction:column;gap:12px;padding-top:22px">
+              <sc-for list="{{ cartTrust }}" as="t" hint-placeholder-count="3">
+                <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--text-secondary)">
+                  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="{{ t.icon }}" size="{{ 18 }}" hint-size="18px,18px"></x-import>
+                  <span>{{ t.text }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </aside>
+        </div>
+      </sc-if>
+      <sc-if value="{{ cartEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:32px 0 16px;display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <p style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);line-height:1.3">Nothing here yet.</p>
+          <p style="margin:0;font-size:15px;color:var(--text-secondary)">Pieces you add will wait here. Anything you’ve saved is below.</p>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" icon-right="arrow-right" on-click="{{ goNew }}" hint-size="160px,44px">See what’s new</x-import>
+        </div>
+      </sc-if>
+    </section>
+    <sc-if value="{{ cartHasItems }}" hint-placeholder-val="{{ true }}">
+      <div class="fm-show-m" style="position:sticky;bottom:var(--tab-h);z-index:20;margin-top:32px;padding:12px 16px;background:var(--surface);border-top:1px solid var(--border);display:flex;gap:12px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:2px;flex:none">
+          <span style="font-size:13px;color:var(--text-muted)">Total</span>
+          <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:19px;letter-spacing:-0.02em;font-variant-numeric:tabular-nums">{{ totalLabel }}</span>
+        </div>
+        <div style="flex:1"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="accent" full-width="{{ true }}" on-click="{{ checkout }}" hint-size="100%,48px">Checkout</x-import></div>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <sc-if value="{{ showSaved }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Wishlist" class="fm-container" style="padding-top:{{ savedTop }}">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:28px">
+        <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:{{ savedSize }};line-height:1;letter-spacing:-0.03em">Saved for later</h2>
+        
+      </div>
+      <sc-if value="{{ wishHasItems }}" hint-placeholder-val="{{ true }}">
+        <div class="fm-grid" style="--cols:4;--cols-m:2">
+          <sc-for list="{{ wishItems }}" as="item" hint-placeholder-count="2">
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ProductCard" product="{{ item.p }}" wishlisted="{{ item.wished }}" on-wishlist="{{ item.onWish }}" on-click="{{ item.open }}" on-quick-add="{{ item.add }}" hint-size="100%,420px"></x-import>
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" size="sm" full-width="{{ true }}" on-click="{{ item.add }}" hint-size="100%,40px">Add to cart</x-import>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ wishEmpty }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;font-size:16px;color:var(--text-secondary)">Tap the heart on anything you’d like to come back to.</p>
+      </sc-if>
+    </section>
+  </sc-if>
+
+  <!-- ============ BROWSE ============ -->
+  <sc-if value="{{ isBrowse }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Browse" class="fm-container" style="padding-top:40px">
+      <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Browse.</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:28px 16px;margin-top:32px">
+        <sc-for list="{{ browseCats }}" as="c" hint-placeholder-count="7">
+          <button type="button" onClick="{{ c.open }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px;min-width:0">
+            <div style="border-radius:20px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ c.src }}" alt="" ratio="4 / 5" radius="0px" hint-size="100%,240px"></x-import></div></div>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:18px;letter-spacing:-0.02em">{{ c.label }}</span><span style="font-size:13px;color:var(--text-muted)">{{ c.count }}</span></span>
+          </button>
+        </sc-for>
+      </div>
+      <h2 style="margin:var(--section-gap) 0 28px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h2)">Collections</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:28px 16px">
+        <sc-for list="{{ browseColls }}" as="c" hint-placeholder-count="3">
+          <button type="button" onClick="{{ c.open }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:12px;min-width:0">
+            <div style="border-radius:28px;overflow:hidden"><div style="transition:transform 700ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.035)"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ c.src }}" alt="" ratio="4 / 3" radius="0px" hint-size="100%,240px"></x-import></div></div>
+            <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);letter-spacing:-0.025em">{{ c.title }}</span><span style="font-size:15px;color:var(--text-secondary)">{{ c.description }}</span><span style="font-size:13px;color:var(--text-muted)">{{ c.countLabel }}</span></span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:48px">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" icon-right="arrow-right" on-click="{{ goNew }}" hint-size="170px,44px">New this week</x-import>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" icon-right="arrow-right" on-click="{{ goMakers }}" hint-size="140px,44px">All makers</x-import>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ============ HELP ============ -->
+  <sc-if value="{{ isHelp }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Help" class="fm-container" style="padding-top:40px;max-width:820px">
+      <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Shipping, returns and help.</h1>
+      <div style="display:flex;flex-direction:column;margin-top:36px;border-top:1px solid var(--border)">
+        <sc-for list="{{ helpTopics }}" as="t" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:8px;padding:24px 0;border-bottom:1px solid var(--border)">
+            <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);letter-spacing:-0.025em">{{ t.title }}</h2>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:var(--text-secondary);text-wrap:pretty">{{ t.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ============ CHECKOUT ============ -->
+  <sc-if value="{{ isCheckout }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Checkout" class="fm-container" style="padding-top:32px">
+      <sc-if value="{{ coForm }}" hint-placeholder-val="{{ true }}">
+        <button type="button" class="fm-hide-m" onClick="{{ goCart }}" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;min-height:40px;font-size:14px;color:var(--text-secondary)" style-hover="color:var(--text-primary)">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="arrow-left" size="{{ 16 }}" hint-size="16px,16px"></x-import>Back to cart
+        </button>
+        <h1 style="margin:8px 0 32px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Checkout</h1>
+        <div style="display:flex;flex-wrap:wrap;gap:40px 64px;align-items:flex-start">
+          <form onSubmit="{{ placeOrder }}" noValidate="{{ true }}" style="flex:7 1 0;min-width:min(100%,340px);display:flex;flex-direction:column;gap:40px">
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+                <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);letter-spacing:-0.025em">Contact</h2>
+                <sc-if value="{{ signedOut }}" hint-placeholder-val="{{ true }}">
+                  <button type="button" data-tap="1" onClick="{{ coSignin }}" style="all:unset;cursor:pointer;font-size:14px;color:var(--text-secondary)" style-hover="color:var(--text-primary)">Have an account? <span style="color:var(--text-primary);text-decoration:underline;text-underline-offset:3px">Sign in</span></button>
+                </sc-if>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px">
+              <sc-for list="{{ coContact }}" as="fd" hint-placeholder-count="2">
+                <div style="grid-column:{{ fd.span }};min-width:0"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="{{ fd.label }}" type="{{ fd.type }}" autoComplete="{{ fd.auto }}" placeholder="{{ fd.ph }}" value="{{ fd.value }}" on-change="{{ fd.onChange }}" error="{{ fd.error }}" hint-size="100%,76px"></x-import></div>
+              </sc-for>
+              </div>
+              <sc-if value="{{ signedOut }}" hint-placeholder-val="{{ true }}">
+                <p style="margin:-4px 0 0;font-size:13px;color:var(--text-secondary)">No account needed. You can create one after your order.</p>
+              </sc-if>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);letter-spacing:-0.025em">Delivery</h2>
+              <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px">
+              <sc-for list="{{ coAddress }}" as="fd" hint-placeholder-count="2">
+                <div style="grid-column:{{ fd.span }};min-width:0"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="{{ fd.label }}" type="{{ fd.type }}" autoComplete="{{ fd.auto }}" placeholder="{{ fd.ph }}" value="{{ fd.value }}" on-change="{{ fd.onChange }}" error="{{ fd.error }}" hint-size="100%,76px"></x-import></div>
+              </sc-for>
+              </div>
+              <div role="radiogroup" aria-label="Delivery method" style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+                <sc-for list="{{ shipOpts }}" as="o" hint-placeholder-count="2">
+                  <button type="button" role="radio" aria-checked="{{ o.on }}" onClick="{{ o.pick }}" style="all:unset;cursor:pointer;box-sizing:border-box;display:flex;align-items:center;gap:14px;padding:16px 20px;border-radius:20px;background:var(--surface);border:1px solid {{ o.border }}">
+                    <span style="flex:none;width:18px;height:18px;border-radius:9999px;box-sizing:border-box;border:{{ o.ring }}"></span>
+                    <span style="flex:1;display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:15px;color:var(--text-primary)">{{ o.label }}</span><span style="font-size:13px;color:var(--text-secondary)">{{ o.sub }}</span></span>
+                    <span style="font-size:15px;font-variant-numeric:tabular-nums">{{ o.price }}</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <h2 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h3);letter-spacing:-0.025em">Payment</h2>
+              <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px">
+              <sc-for list="{{ coPay }}" as="fd" hint-placeholder-count="2">
+                <div style="grid-column:{{ fd.span }};min-width:0"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="{{ fd.label }}" type="{{ fd.type }}" autoComplete="{{ fd.auto }}" placeholder="{{ fd.ph }}" value="{{ fd.value }}" on-change="{{ fd.onChange }}" error="{{ fd.error }}" hint-size="100%,76px"></x-import></div>
+              </sc-for>
+              </div>
+              <div style="display:flex;gap:8px;align-items:center;font-size:13px;color:var(--text-secondary)">
+                <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="lock" size="{{ 16 }}" hint-size="16px,16px"></x-import>Card details are encrypted and never stored by FORME.
+              </div>
+            </div>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" type="submit" variant="accent" size="lg" full-width="{{ true }}" disabled="{{ coBusy }}" hint-size="100%,56px">{{ placeLabel }}</x-import>
+          </form>
+          <aside style="flex:4 1 0;min-width:min(100%,300px);position:sticky;top:24px;box-sizing:border-box;border-radius:28px;background:var(--bg);padding:28px;display:flex;flex-direction:column">
+            <h2 style="margin:0 0 8px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:20px;letter-spacing:-0.02em">Your order</h2>
+            <sc-for list="{{ coItems }}" as="it" hint-placeholder-count="2">
+              <div style="display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)">
+                <div style="width:56px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ it.image }}" ratio="1 / 1" radius="12px" hint-size="56px,56px"></x-import></div>
+                <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><span style="font-size:15px">{{ it.name }}</span><span style="font-size:13px;color:var(--text-secondary)">{{ it.meta }}</span></span>
+                <span style="font-size:15px;font-variant-numeric:tabular-nums">{{ it.total }}</span>
+              </div>
+            </sc-for>
+            <div style="display:flex;flex-direction:column;gap:12px;padding:18px 0 20px;font-size:15px;font-variant-numeric:tabular-nums">
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">Subtotal</span><span>{{ subtotalLabel }}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">{{ coShipName }}</span><span>{{ coShipLabel }}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px"><span style="color:var(--text-secondary)">Tax</span><span>Included</span></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:18px;border-top:1px solid var(--border)">
+              <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:22px;letter-spacing:-0.025em">Total</span>
+              <span style="font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:22px;letter-spacing:-0.025em;font-variant-numeric:tabular-nums">{{ coTotalLabel }}</span>
+            </div>
+          </aside>
+        </div>
+      </sc-if>
+      <sc-if value="{{ coDone }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:640px;display:flex;flex-direction:column;gap:18px;padding:24px 0 16px">
+          <span style="font-size:14px;color:var(--text-secondary)">Order {{ order.no }}</span>
+          <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Thank you, {{ order.first }}.</h1>
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.5;color:var(--text-secondary);text-wrap:pretty">Your order is confirmed. A receipt is on its way to {{ order.email }}. It should arrive {{ order.eta }}.</p>
+          <div style="display:flex;flex-direction:column;border-top:1px solid var(--border);margin-top:8px">
+            <sc-for list="{{ order.items }}" as="it" hint-placeholder-count="2">
+              <div style="display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)">
+                <div style="width:56px;flex:none"><x-import component-from-global-scope="FORMEDesignSystem_c41e46.Media" src="{{ it.image }}" ratio="1 / 1" radius="12px" hint-size="56px,56px"></x-import></div>
+                <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><span style="font-size:15px">{{ it.name }}</span><span style="font-size:13px;color:var(--text-secondary)">{{ it.meta }}</span></span>
+                <span style="font-size:15px;font-variant-numeric:tabular-nums">{{ it.total }}</span>
+              </div>
+            </sc-for>
+            <div style="display:flex;justify-content:space-between;padding:16px 0;font-size:16px"><span>Total paid</span><span style="font-variant-numeric:tabular-nums">{{ order.totalLabel }}</span></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <sc-if value="{{ signedOut }}" hint-placeholder-val="{{ true }}">
+              <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" on-click="{{ coRegister }}" hint-size="190px,44px">Save my details</x-import>
+            </sc-if>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" icon-right="arrow-right" on-click="{{ goNew }}" hint-size="190px,44px">Continue shopping</x-import>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ coEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:32px 0;display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;letter-spacing:-0.03em;line-height:1.05;font-size:var(--fs-h2)">Your cart is empty.</h1>
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" icon-right="arrow-right" on-click="{{ goNew }}" hint-size="160px,44px">See what’s new</x-import>
+        </div>
+      </sc-if>
+    </section>
+  </sc-if>
+
+  <!-- ============ ACCOUNT ============ -->
+  <sc-if value="{{ isAccount }}" hint-placeholder-val="{{ false }}">
+    <section data-screen-label="Account" class="fm-container" style="padding-top:40px;padding-bottom:var(--section-gap)">
+      <p style="margin:0 0 14px;font-family:'Switzer',sans-serif;font-size:13px;letter-spacing:-0.006em;line-height:1.3;color:var(--text-muted)">Member since {{ user.since }}</p>
+      <h1 style="margin:0;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h1);line-height:1;letter-spacing:-0.035em">Hello, {{ user.first }}.</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin-top:40px">
+        <sc-for list="{{ accountTiles }}" as="t" hint-placeholder-count="3">
+          <button type="button" onClick="{{ t.go }}" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px 24px;border-radius:24px;background:var(--bg);transition:background 140ms cubic-bezier(.2,.7,.2,1)" style-hover="background:var(--stone-200)">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="{{ t.icon }}" size="{{ 22 }}" hint-size="22px,22px"></x-import>
+            <span style="flex:1;display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:16px;color:var(--text-primary)">{{ t.label }}</span>
+              <span style="font-size:13px;color:var(--text-secondary)">{{ t.sub }}</span>
+            </span>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="arrow-right" size="{{ 18 }}" hint-size="18px,18px"></x-import>
+          </button>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:56px;margin-top:64px">
+        <div>
+          <h2 style="margin:0 0 8px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h3);letter-spacing:-0.025em">Your details</h2>
+          <sc-for list="{{ accountRows }}" as="row" hint-placeholder-count="3">
+            <div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--border);font-size:15px">
+              <span style="color:var(--text-secondary)">{{ row.k }}</span>
+              <span style="color:var(--text-primary);text-align:right;overflow-wrap:anywhere">{{ row.v }}</span>
+            </div>
+          </sc-for>
+          <div style="display:flex;gap:8px;margin-top:24px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" on-click="{{ signOut }}" hint-size="110px,44px">Sign out</x-import>
+          </div>
+        </div>
+        <div>
+          <h2 style="margin:0 0 8px;font-family:'Satoshi','Switzer',sans-serif;font-weight:500;font-size:var(--fs-h3);letter-spacing:-0.025em">Orders</h2>
+          <div style="padding:16px 0;border-bottom:1px solid var(--border)">
+            <p style="margin:0;font-size:15px;color:var(--text-secondary);text-wrap:pretty">No orders yet. When something ships, you’ll be able to track it here.</p>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:24px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" on-click="{{ goNew }}" hint-size="150px,44px">Explore new in</x-import>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <footer style="margin-top:var(--section-gap);background:var(--stone-900, #161413);color:#fff">
+    <div class="fm-container" style="padding-top:clamp(48px,7cqi,88px);padding-bottom:28px;display:flex;flex-direction:column;gap:clamp(48px,7cqi,80px)">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px 48px">
+        <div style="flex:1 1 260px;max-width:340px;display:flex;flex-direction:column;gap:10px">
+          <button type="button" onClick="{{ goHome }}" style="all:unset;cursor:pointer;align-self:flex-start;font-family:'Satoshi','Switzer',sans-serif;font-weight:700;font-size:28px;letter-spacing:-0.065em;line-height:1;color:#fff">forme</button>
+          <p style="margin:0;font-size:15px;line-height:1.5;color:var(--stone-400);text-wrap:pretty">Furniture, lighting and objects from independent makers — chosen one piece at a time.</p>
+        </div>
+        <div style="flex:2 1 520px;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:32px 24px">
+          <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="4">
+            <div style="display:flex;flex-direction:column;gap:2px">
+              <span style="font-size:14px;font-weight:500;letter-spacing:-0.01em;color:#fff;margin-bottom:8px">{{ col.title }}</span>
+              <sc-for list="{{ col.links }}" as="lk" hint-placeholder-count="3">
+                <button type="button" data-flink="1" onClick="{{ lk.go }}" style="all:unset;cursor:pointer;align-self:flex-start;min-height:30px;display:flex;align-items:center;font-size:14px;letter-spacing:-0.01em;color:var(--stone-400);transition:color 140ms cubic-bezier(.2,.7,.2,1)" style-hover="color:#fff">{{ lk.label }}</button>
+              </sc-for>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.12);font-size:13px;color:var(--stone-400)">
+        <span>© 2026 FORME</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 20px">
+          <sc-for list="{{ footerLegal }}" as="lk" hint-placeholder-count="3">
+            <button type="button" data-tap="1" onClick="{{ lk.go }}" style="all:unset;cursor:pointer;color:var(--stone-400)" style-hover="color:#fff">{{ lk.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </main>
+  </div>
+  <sc-if value="{{ showTabs }}" hint-placeholder-val="{{ true }}">
+  <nav aria-label="Main" class="fm-show-m" style="position:sticky;bottom:0;z-index:30;display:flex;justify-content:space-around;padding:6px 8px calc(8px + var(--safe-b));background:var(--surface);border-top:1px solid var(--border)">
+    <sc-for list="{{ tabItems }}" as="it" hint-placeholder-count="5">
+      <button type="button" aria-label="{{ it.label }}" aria-current="{{ it.current }}" onClick="{{ it.go }}" style="all:unset;cursor:pointer;position:relative;flex:1;min-width:0;height:50px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:{{ it.color }}">
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Icon" name="{{ it.icon }}" size="{{ 22 }}" hint-size="22px,22px"></x-import>
+        <span style="font-size:11px;letter-spacing:-0.006em;line-height:1">{{ it.label }}</span>
+        <sc-if value="{{ it.hasCount }}" hint-placeholder-val="{{ false }}">
+          <span style="position:absolute;top:2px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 4px;box-sizing:border-box;border-radius:9999px;background:var(--text-primary);color:var(--surface);font-size:10px;line-height:17px;text-align:center">{{ it.count }}</span>
+        </sc-if>
+      </button>
+    </sc-for>
+  </nav>
+  </sc-if>
+
+  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Drawer" open="{{ drawerOpen }}" on-close="{{ closeDrawer }}" side="right" title="Your cart" count="{{ cartCountLabel }}" hint-size="0px,0px">
+    <sc-if value="{{ cartHasItems }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <sc-for list="{{ cartLines }}" as="l" hint-placeholder-count="2">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.CartItem" item="{{ l.item }}" compact="{{ true }}" on-quantity="{{ l.onQty }}" on-remove="{{ l.remove }}" hint-size="100%,96px"></x-import>
+        </sc-for>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.OrderSummary" subtotal="{{ subtotal }}" free-shipping-at="{{ freeAt }}" show-progress="{{ true }}" hint-size="100%,240px">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="accent" size="lg" full-width="{{ true }}" on-click="{{ checkout }}" hint-size="100%,52px">Checkout</x-import>
+            <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="secondary" full-width="{{ true }}" on-click="{{ goCart }}" hint-size="100%,44px">View cart</x-import>
+          </div>
+        </x-import>
+      </div>
+    </sc-if>
+    <sc-if value="{{ cartEmpty }}" hint-placeholder-val="{{ false }}">
+      <p style="margin:0;font-size:16px;color:var(--text-secondary)">Your cart is empty — for now.</p>
+    </sc-if>
+  </x-import>
+
+  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Modal" open="{{ authOpen }}" on-close="{{ closeAuth }}" title="{{ authTitle }}" description="{{ authDesc }}" size="sm" hint-size="0px,0px">
+    <sc-if value="{{ authTabs }}" hint-placeholder-val="{{ true }}">
+      <div role="tablist" style="display:flex;gap:4px;padding:4px;border-radius:9999px;background:var(--surface-sunken);margin:4px 0 22px">
+        <button type="button" role="tab" onClick="{{ toSignin }}" style="all:unset;cursor:pointer;flex:1;text-align:center;height:38px;line-height:38px;border-radius:9999px;font-size:14px;color:var(--text-primary);background:{{ tabSigninBg }};box-shadow:{{ tabSigninShadow }};transition:background 140ms">Sign in</button>
+        <button type="button" role="tab" onClick="{{ toRegister }}" style="all:unset;cursor:pointer;flex:1;text-align:center;height:38px;line-height:38px;border-radius:9999px;font-size:14px;color:var(--text-primary);background:{{ tabRegisterBg }};box-shadow:{{ tabRegisterShadow }};transition:background 140ms">Create account</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{ showAuthForm }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ authSubmit }}" noValidate="{{ true }}" style="display:flex;flex-direction:column;gap:14px">
+        <sc-if value="{{ isRegister }}" hint-placeholder-val="{{ false }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="Name" autoComplete="name" placeholder="First and last name" value="{{ af.name }}" on-change="{{ af.onName }}" error="{{ af.errName }}" hint-size="100%,76px"></x-import>
+        </sc-if>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="Email" type="email" autoComplete="email" placeholder="you@example.com" value="{{ af.email }}" on-change="{{ af.onEmail }}" error="{{ af.errEmail }}" hint-size="100%,76px"></x-import>
+        <sc-if value="{{ showPassword }}" hint-placeholder-val="{{ true }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Input" label="Password" type="{{ af.pwType }}" autoComplete="{{ af.pwAuto }}" placeholder="{{ af.pwPlaceholder }}" value="{{ af.password }}" on-change="{{ af.onPassword }}" error="{{ af.errPassword }}" hint="{{ af.pwHint }}" trailing="{{ af.pwToggle }}" hint-size="100%,76px"></x-import>
+        </sc-if>
+        <sc-if value="{{ isSignin }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;justify-content:flex-end;margin-top:-4px">
+            <button type="button" onClick="{{ toReset }}" style="all:unset;cursor:pointer;font-size:13px;color:var(--text-secondary);text-decoration:underline;text-underline-offset:3px" style-hover="color:var(--text-primary)">Forgot password?</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ isRegister }}" hint-placeholder-val="{{ false }}">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Checkbox" checked="{{ af.letters }}" on-change="{{ af.onLetters }}" label="Send me Letters from FORME — twice a month, never more." hint-size="100%,24px"></x-import>
+        </sc-if>
+        <sc-if value="{{ af.hasFormErr }}" hint-placeholder-val="{{ false }}">
+          <p role="alert" style="margin:0;font-size:14px;color:var(--error)">{{ af.formErr }} <button type="button" onClick="{{ af.errAction }}" style="all:unset;cursor:pointer;color:var(--text-primary);text-decoration:underline;text-underline-offset:3px">{{ af.errActionLabel }}</button></p>
+        </sc-if>
+        <div style="margin-top:6px">
+          <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" type="submit" variant="{{ af.btnVariant }}" size="lg" full-width="{{ true }}" disabled="{{ af.busy }}" hint-size="100%,52px">{{ af.submitLabel }}</x-import>
+        </div>
+        <sc-if value="{{ isRegister }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0;font-size:12px;line-height:1.5;color:var(--text-muted);text-align:center;text-wrap:pretty">By creating an account you agree to FORME’s terms and privacy policy.</p>
+        </sc-if>
+        <sc-if value="{{ isReset }}" hint-placeholder-val="{{ false }}">
+          <button type="button" onClick="{{ toSignin }}" style="all:unset;cursor:pointer;align-self:center;font-size:14px;color:var(--text-secondary)" style-hover="color:var(--text-primary)">Back to sign in</button>
+        </sc-if>
+      </form>
+    </sc-if>
+    <sc-if value="{{ isResetSent }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font-size:15px;line-height:1.5;color:var(--text-secondary);text-wrap:pretty">If there’s an account for <span style="color:var(--text-primary)">{{ af.email }}</span>, a reset link is on its way. It expires in 30 minutes.</p>
+        <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Button" variant="primary" size="lg" full-width="{{ true }}" on-click="{{ toSignin }}" hint-size="100%,52px">Back to sign in</x-import>
+      </div>
+    </sc-if>
+  </x-import>
+
+  <x-import component-from-global-scope="FORMEDesignSystem_c41e46.ToastRegion" hint-size="0px,0px">
+    <sc-for list="{{ toasts }}" as="t" hint-placeholder-count="0">
+      <x-import component-from-global-scope="FORMEDesignSystem_c41e46.Toast" message="{{ t.message }}" variant="{{ t.variant }}" action="{{ t.action }}" on-action="{{ t.act }}" on-close="{{ t.close }}" duration="{{ 3600 }}" hint-size="300px,48px"></x-import>
+    </sc-for>
+  </x-import>
+
+</div>
+</div>
+
+
+</div></div></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;viewport&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;desktop&quot;,&quot;mobile&quot;],&quot;default&quot;:&quot;desktop&quot;,&quot;tsType&quot;:&quot;'desktop'|'mobile'&quot;},&quot;floatingCard&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;freeShippingAt&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:250,&quot;min&quot;:0,&quot;max&quot;:1000,&quot;step&quot;:10,&quot;unit&quot;:&quot;$&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  D = (() => {
+    const CATS = [
+      { id: 'furniture', label: 'Furniture', tone: 'clay', count: 1284, blurb: 'Chairs, tables and storage made to be lived with — and kept for decades.', shot: 'Oak dining table, four turned chairs, morning light' },
+      { id: 'lighting', label: 'Lighting', tone: 'sand', count: 642, blurb: 'Lamps from independent studios. Warm light, honest materials, forms that hold a room.', shot: 'Travertine table lamp lit at dusk on a walnut sideboard' },
+      { id: 'decor', label: 'Home Decor', tone: 'sage', count: 2310, blurb: 'Vases, textiles and the small things that make a space feel like yours.', shot: 'Ribbed glass vase with dried grasses on a linen runner' },
+      { id: 'kitchen', label: 'Kitchen & Dining', tone: 'ivory', count: 1876, blurb: 'Tableware and tools that earn a place on the counter.', shot: 'Speckled stoneware stacked beside a carafe' },
+      { id: 'workspace', label: 'Workspace', tone: 'mist', count: 534, blurb: 'Calm, organised desks. Objects for focus.', shot: 'Walnut monitor stand, felt tray, a single notebook' },
+      { id: 'lifestyle', label: 'Lifestyle', tone: 'olive', count: 918, blurb: 'Everyday essentials, considered.', shot: 'Washed linen robe on a hook, bathroom window light' },
+      { id: 'gifts', label: 'Objects & Gifts', tone: 'terracotta', count: 1450, blurb: 'Things worth giving — and keeping.', shot: 'Brass bookends holding three paperbacks' },
+    ];
+    const B = {
+      ferro: { id: 'ferro', name: 'Studio Ferro', location: 'Milan, IT', category: 'Lighting', tone: 'sand', blurb: 'A two-person studio casting lamps in travertine, glass and brushed steel since 2016.', story: 'Marta and Luca Ferro cast every base at a foundry outside Milan, then hand-finish the stone in a courtyard studio on Via Tortona. Each lamp is signed underneath.' },
+      nordvik: { id: 'nordvik', name: 'Nordvik', location: 'Copenhagen, DK', category: 'Furniture', tone: 'clay', blurb: 'Solid-wood furniture built in a small workshop north of Copenhagen.', story: 'Six cabinetmakers, one workshop, no veneers. Nordvik builds in oak and ash from managed Danish forests and will repair anything it has ever made.' },
+      kiln: { id: 'kiln', name: 'Kiln & Co.', location: 'Porto, PT', category: 'Kitchen & Dining', tone: 'sage', blurb: 'Hand-thrown stoneware, fired in small batches.', story: 'Inês and Rui Matos throw every piece at one wheel in a former tile workshop above the Douro — about forty a day, on a good day — and fire each one twice.' },
+      mou: { id: 'mou', name: 'Atelier Mou', location: 'Lyon, FR', category: 'Home Decor', tone: 'mist', blurb: 'Textiles and glass with a soft, sculptural hand.', story: 'Claire Mou trained as a glassblower and weaves on the side. Her studio mixes both: mouth-blown vessels and heavy wool throws, made in runs of a few dozen.' },
+      paper: { id: 'paper', name: 'Paper Office', location: 'Tokyo, JP', category: 'Workspace', tone: 'ivory', blurb: 'Desk objects for slower, more deliberate work.', story: 'Paper Office started as a stationery shop in Kuramae. Its own pieces are made with neighbouring workshops — walnut from one, linen bindings from another.' },
+      orrin: { id: 'orrin', name: 'Orrin', location: 'Berlin, DE', category: 'Lighting', tone: 'ash', blurb: 'Machined aluminium and vegetable-tanned leather for the devices you carry.', story: 'Orrin machines its docks from recycled aluminium in Neukölln and sources leather from a single tannery in Tuscany. Nothing is glued that can be stitched.' },
+      sel: { id: 'sel', name: 'Maison Sel', location: 'Paris, FR', category: 'Lifestyle', tone: 'olive', blurb: 'Linen and bath goods, washed soft.', story: 'Maison Sel washes its Normandy linen three times before it ships, so it arrives already feeling like it has been yours for years.' },
+      hollow: { id: 'hollow', name: 'Hollow Goods', location: 'Brooklyn, US', category: 'Objects & Gifts', tone: 'terracotta', blurb: 'Small objects in stone and brass.', story: 'Hollow Goods turns offcuts from a Brooklyn stone yard into candle holders, bookends and paperweights. Every piece is a little different, by design.' },
+    };
+    const p = (id, name, brand, cat, price, tone, extra = {}) => ({ id, name, brand: B[brand].name, brandId: brand, cat, price, tone, imageLabel: name, rating: extra.rating || 4.7, reviews: extra.reviews || 48, ...extra });
+    const PRODUCTS = [
+      p('halo', 'Halo Table Lamp', 'ferro', 'lighting', 280, 'sand', { badge: 'New', colors: ['#e2d5c1', '#3a3634', '#c9a37a'], rating: 4.8, reviews: 212, added: 1, image: 'assets/lamp-photo-c.png' }),
+      p('arc', 'Arc Floor Lamp', 'ferro', 'lighting', 640, 'ivory', { image: 'assets/hd/p-arc.jpg', colors: ['#eee8de', '#161413'], added: 9 }),
+      p('lounge', 'Lounge Chair No. 4', 'nordvik', 'furniture', 1240, 'clay', { compareAt: 1450, badge: 'Sale', colors: ['#c9a37a', '#5b3d2b'], rating: 4.9, reviews: 96, added: 12, image: 'assets/chair-photo-c.png' }),
+      p('sideboard', 'Low Oak Sideboard', 'nordvik', 'furniture', 2180, 'sand', { image: 'assets/hd/p-sideboard.jpg', added: 14 }),
+      p('carafe', 'Stoneware Carafe', 'kiln', 'kitchen', 68, 'sage', { image: 'assets/hd/p-carafe.jpg', colors: ['#b9bea9', '#eee8de', '#665a54'], added: 3 }),
+      p('dinner', 'Speckled Dinner Set, 4 pcs', 'kiln', 'kitchen', 186, 'ivory', { image: 'assets/hd/p-dinner.jpg', badge: 'Bestseller', reviews: 330, added: 20 }),
+      p('vase', 'Ribbed Glass Vase', 'mou', 'decor', 92, 'mist', { image: 'assets/hd/p-vase.jpg', colors: ['#dde0dc', '#b9765c'], added: 5 }),
+      p('throw', 'Wool Throw, Moss', 'mou', 'decor', 210, 'olive', { image: 'assets/hd/p-throw.jpg', added: 16 }),
+      p('tray', 'Desk Tray Set', 'paper', 'workspace', 54, 'clay', { image: 'assets/hd/p-tray.jpg', colors: ['#cfae93', '#3a3634'], added: 11 }),
+      p('stand', 'Walnut Monitor Stand', 'paper', 'workspace', 165, 'ash', { image: 'assets/hd/p-stand.jpg', added: 18 }),
+      p('robe', 'Washed Linen Robe', 'sel', 'lifestyle', 158, 'sand', { image: 'assets/hd/p-robe.jpg', colors: ['#e2d5c1', '#b9bea9', '#665a54'], added: 7 }),
+      p('candle', 'Travertine Candle Holder', 'hollow', 'gifts', 76, 'ivory', { image: 'assets/hd/p-candle.jpg', badge: 'Limited', added: 4 }),
+      p('bookends', 'Brass Bookends', 'hollow', 'gifts', 120, 'clay', { image: 'assets/hd/p-bookends.jpg', added: 15 }),
+      p('pendant', 'Opal Pendant Lamp', 'ferro', 'lighting', 420, 'mist', { image: 'assets/hd/p-pendant.jpg', rating: 4.6, added: 10 }),
+      p('mushroom', 'Mushroom Lamp', 'ferro', 'lighting', 190, 'sage', { image: 'assets/hd/p-mushroom.jpg', colors: ['#b9bea9', '#eee8de', '#cfae93'], added: 6 }),
+      p('sconce', 'Travertine Wall Sconce', 'ferro', 'lighting', 340, 'sand', { image: 'assets/hd/p-sconce.jpg', added: 17 }),
+      p('clip', 'Clip Lamp, Black', 'orrin', 'lighting', 140, 'slate', { image: 'assets/hd/p-clip.jpg', badge: 'New', added: 8 }),
+      p('lantern', 'Paper Lantern, Large', 'paper', 'lighting', 220, 'ivory', { image: 'assets/hd/p-lantern.jpg', added: 19 }),
+      p('stool', 'Turned Ash Stool', 'nordvik', 'furniture', 390, 'sand', { image: 'assets/hd/p-stool.jpg', colors: ['#e2d5c1', '#161413'], added: 21 }),
+      p('mirror', 'Round Oak Mirror', 'mou', 'decor', 310, 'clay', { image: 'assets/hd/p-mirror.jpg', added: 22 }),
+      p('mugs', 'Glazed Mugs, Set of 2', 'kiln', 'kitchen', 58, 'terracotta', { image: 'assets/hd/p-mugs.jpg', added: 23 }),
+      p('notebook', 'Linen Notebook', 'paper', 'workspace', 32, 'olive', { image: 'assets/hd/p-notebook.jpg', added: 24 }),
+      p('dining', 'Oval Oak Dining Table', 'nordvik', 'furniture', 2650, 'clay', { image: 'assets/hd/p-dining.jpg', colors: ['#c9a37a', '#5b3d2b'], added: 25 }),
+      p('sofa', 'Bouclé Sofa, Three-Seat', 'nordvik', 'furniture', 3400, 'ivory', { image: 'assets/hd/p-sofa.jpg', badge: 'New', colors: ['#eee8de', '#b9bea9'], added: 26 }),
+      p('shelf', 'Ash Wall Shelf', 'nordvik', 'furniture', 280, 'sand', { image: 'assets/hd/p-shelf.jpg', added: 27 }),
+      p('bowl', 'Serving Bowl, Large', 'kiln', 'kitchen', 84, 'ivory', { image: 'assets/hd/p-bowl.jpg', colors: ['#eee8de', '#b9bea9'], added: 28 }),
+      p('board', 'Walnut Bread Board', 'nordvik', 'kitchen', 72, 'clay', { image: 'assets/hd/p-board.jpg', added: 29 }),
+      p('teapot', 'Stoneware Teapot', 'kiln', 'kitchen', 110, 'sage', { image: 'assets/hd/p-teapot.jpg', badge: 'Limited', added: 30 }),
+      p('cushion', 'Linen Cushion, Ochre', 'mou', 'decor', 64, 'sand', { image: 'assets/hd/p-cushion.jpg', colors: ['#cfae93', '#b9bea9', '#665a54'], added: 31 }),
+      p('bud', 'Bud Vase Trio', 'mou', 'decor', 78, 'mist', { image: 'assets/hd/p-bud.jpg', added: 32 }),
+      p('rug', 'Hand-Loomed Wool Rug', 'mou', 'decor', 540, 'olive', { image: 'assets/hd/p-rug.jpg', added: 33 }),
+      p('desklamp', 'Brushed Steel Desk Lamp', 'ferro', 'workspace', 260, 'slate', { image: 'assets/hd/p-desklamp.jpg', added: 34 }),
+      p('pad', 'Felt Desk Pad', 'paper', 'workspace', 46, 'ash', { image: 'assets/hd/p-pad.jpg', colors: ['#9b9690', '#3a3634'], added: 35 }),
+      p('pens', 'Brass Pen Cup', 'paper', 'workspace', 38, 'clay', { image: 'assets/hd/p-pens.jpg', added: 36 }),
+      p('towels', 'Linen Bath Towels, Pair', 'sel', 'lifestyle', 96, 'ivory', { image: 'assets/hd/p-towels.jpg', colors: ['#eee8de', '#b9bea9'], added: 41 }),
+      p('sheets', 'Washed Linen Sheet Set', 'sel', 'lifestyle', 290, 'mist', { image: 'assets/hd/p-sheets.jpg', badge: 'Bestseller', reviews: 410, added: 42 }),
+      p('slippers', 'Felt House Slippers', 'sel', 'lifestyle', 74, 'ash', { image: 'assets/hd/p-slippers.jpg', added: 43 }),
+      p('apron', 'Linen Apron', 'sel', 'lifestyle', 58, 'olive', { image: 'assets/hd/p-apron.jpg', added: 44 }),
+      p('tote', 'Canvas Market Tote', 'sel', 'lifestyle', 48, 'sand', { image: 'assets/hd/p-tote.jpg', added: 45 }),
+      p('paperweight', 'Marble Paperweight', 'hollow', 'gifts', 42, 'mist', { image: 'assets/hd/p-paperweight.jpg', added: 46 }),
+      p('incense', 'Stone Incense Holder', 'hollow', 'gifts', 36, 'ash', { image: 'assets/hd/p-incense.jpg', added: 47 }),
+      p('coasters', 'Travertine Coasters, Set of 4', 'hollow', 'gifts', 54, 'ivory', { image: 'assets/hd/p-coasters.jpg', added: 48 }),
+      p('frame', 'Brass Picture Frame', 'hollow', 'gifts', 68, 'clay', { image: 'assets/hd/p-frame.jpg', added: 49 }),
+    ];
+    const ATTR = {
+      halo:['Table lamps','Travertine'], arc:['Floor lamps','Steel'], pendant:['Pendants','Glass'], mushroom:['Table lamps','Glass'], sconce:['Wall lights','Travertine'], clip:['Desk lamps','Steel'], lantern:['Pendants','Paper'],
+      lounge:['Chairs','Bouclé'], sideboard:['Storage','Oak'], stool:['Stools','Ash'], dining:['Tables','Oak'], sofa:['Sofas','Bouclé'], shelf:['Storage','Ash'],
+      carafe:['Serveware','Stoneware'], dinner:['Tableware','Stoneware'], mugs:['Drinkware','Stoneware'], bowl:['Serveware','Stoneware'], board:['Serveware','Walnut'], teapot:['Drinkware','Stoneware'],
+      vase:['Vases','Glass'], throw:['Textiles','Wool'], mirror:['Mirrors','Oak'], cushion:['Textiles','Linen'], bud:['Vases','Glass'], rug:['Rugs','Wool'],
+      tray:['Organisers','Steel'], stand:['Stands','Walnut'], notebook:['Paper goods','Linen'], desklamp:['Desk lamps','Steel'], pad:['Desk pads','Felt'], pens:['Organisers','Brass'],
+      cable:['Cable care','Leather'], dock:['Charging','Aluminium'], sleeve:['Cases','Leather'], speaker:['Stands','Oak'], wallet:['Cases','Leather'], earstand:['Stands','Aluminium'],
+      robe:['Bath','Linen'], towels:['Bath','Linen'], sheets:['Bedding','Linen'], slippers:['Home wear','Felt'], apron:['Home wear','Linen'], tote:['Bags','Canvas'],
+      candle:['Candle holders','Travertine'], bookends:['Desk objects','Brass'], paperweight:['Desk objects','Marble'], incense:['Scent','Stone'], coasters:['Tableware','Travertine'], frame:['Frames','Brass'],
+    };
+    PRODUCTS.forEach((x) => { const a = ATTR[x.id]; if (a) { x.type = a[0]; x.material = a[1]; } });
+    CATS.forEach((c) => { c.count = PRODUCTS.filter((x) => x.cat === c.id).length; });
+    const COLLECTIONS = [
+      { id: 'warm-light', title: 'Warm Light', description: 'Lamps for the long evenings.', tone: 'ash', shot: 'A dim living room lit only by three lamps', items: ['halo', 'mushroom', 'sconce', 'pendant', 'lantern', 'arc'] },
+      { id: 'slow-mornings', title: 'Slow Mornings', description: 'Stoneware, linen and early light.', tone: 'sand', shot: 'Breakfast table, carafe and mugs, low sun', items: ['carafe', 'mugs', 'robe', 'dinner', 'throw'] },
+      { id: 'quiet-desk', title: 'The Quiet Desk', description: 'Objects for focus — walnut, felt and brushed steel.', tone: 'slate', shot: 'A cleared desk at night, one clip lamp on', items: ['stand', 'tray', 'notebook', 'clip', 'desklamp', 'pad'] },
+    ];
+    const DESC = {
+      lighting: 'Cast and finished by hand, wired with a linen-wrapped cord and a warm 2700K bulb. Dimmable from the base.',
+      furniture: 'Solid wood, joined rather than screwed, and finished in hard-wax oil — made to be repaired, not replaced.',
+      kitchen: 'Thrown on the wheel and fired twice. Dishwasher safe, though it ages better washed by hand.',
+      decor: 'Made in small runs in the studio, so no two are quite the same.',
+      workspace: 'Designed to clear the desk, not fill it.',
+      tech: 'Machined from recycled aluminium and finished with vegetable-tanned leather that darkens with use.',
+      lifestyle: 'Normandy linen, washed three times before it ships.',
+      gifts: 'Cut from stone-yard offcuts, so each piece carries its own veining.',
+    };
+    const SPECS = {
+      lighting: [['Materials', 'Travertine, brushed steel, opal glass'], ['Dimensions', 'H 42 × Ø 30 cm'], ['Bulb', 'E27, 2700K, included']],
+      furniture: [['Materials', 'Solid oak, hard-wax oil'], ['Dimensions', 'W 78 × D 82 × H 74 cm'], ['Assembly', 'Arrives assembled']],
+      kitchen: [['Materials', 'Stoneware, food-safe glaze'], ['Capacity', '1.1 litres'], ['Care', 'Dishwasher safe']],
+      decor: [['Materials', 'Mouth-blown glass'], ['Dimensions', 'H 28 × Ø 14 cm'], ['Care', 'Hand wash']],
+      workspace: [['Materials', 'Walnut, wool felt'], ['Dimensions', 'W 54 × D 22 × H 9 cm'], ['Care', 'Wipe clean']],
+      tech: [['Materials', 'Aluminium, leather'], ['Compatibility', 'USB-C, Qi2'], ['Warranty', 'Two years']],
+      lifestyle: [['Materials', '100% linen'], ['Sizes', 'S/M, L/XL'], ['Care', 'Machine wash 40°']],
+      gifts: [['Materials', 'Travertine or brass'], ['Dimensions', 'H 8 × Ø 7 cm'], ['Gift wrap', 'Available at checkout']],
+    };
+    const DIMS = { 'Table lamps': 'H 42 × Ø 28 cm', 'Floor lamps': 'H 168 × Ø 38 cm', 'Pendants': 'H 30 × Ø 40 cm, 2 m cord', 'Wall lights': 'H 26 × W 18 × D 12 cm', 'Desk lamps': 'H 45 cm, arm reach 40 cm', 'Chairs': 'W 78 × D 82 × H 74 cm, seat H 40 cm', 'Storage': 'W 180 × D 45 × H 62 cm', 'Stools': 'Ø 34 × H 46 cm', 'Tables': 'W 200 × D 100 × H 74 cm, seats 6', 'Sofas': 'W 228 × D 92 × H 72 cm', 'Serveware': 'H 24 × Ø 11 cm', 'Tableware': 'Plate Ø 27 cm, bowl Ø 16 cm', 'Drinkware': '350 ml each', 'Vases': 'H 28 × Ø 14 cm', 'Textiles': '130 × 180 cm', 'Mirrors': 'Ø 70 cm', 'Rugs': '170 × 240 cm', 'Organisers': 'W 30 × D 20 × H 4 cm', 'Stands': 'W 54 × D 22 × H 9 cm', 'Paper goods': 'A5, 192 pages', 'Desk pads': '80 × 35 cm', 'Bath': 'Bath towel 70 × 140 cm', 'Bedding': 'Double, 200 × 200 cm', 'Home wear': 'One size', 'Bags': '38 × 42 cm', 'Candle holders': 'H 8 × Ø 7 cm', 'Desk objects': 'H 14 × W 12 cm', 'Scent': 'Ø 9 cm', 'Frames': 'Fits a 13 × 18 cm print' };
+    const DIMS_ID = { teapot: '0.9 litres', carafe: '1.1 litres', board: '45 × 22 cm', bowl: 'Ø 28 cm', coasters: 'Ø 10 cm, set of 4', paperweight: 'Ø 8 cm', shelf: 'W 90 × D 22 cm' };
+    const REVIEWS = {
+      lighting: [{ stars: 5, text: 'The stone is heavier and warmer than the photos suggest. On the dimmer it does exactly what we wanted in the evenings.', who: 'Hanna, Oslo · Sept 2026' }, { stars: 4, text: 'Beautifully finished. The cord is shorter than I expected, so check where your socket is.', who: 'Tom, Leeds · Aug 2026' }],
+      furniture: [{ stars: 5, text: 'Arrived assembled and perfectly wrapped. The oil finish has already taken a coffee ring and buffed out fine.', who: 'Julia, Berlin · Sept 2026' }, { stars: 5, text: 'Sits lower than my old chair, which I now prefer. Worth measuring first.', who: 'Marco, Turin · July 2026' }],
+      kitchen: [{ stars: 5, text: 'Every piece is slightly different, which is the point. The glaze is lovely in daylight.', who: 'Inês, Lisbon · Sept 2026' }, { stars: 4, text: 'Heavier than supermarket stoneware. Mine had a small glaze pool on the base. I like it.', who: 'Sam, Bristol · June 2026' }],
+      decor: [{ stars: 5, text: 'You can see it was made by hand, in a good way. It looks right with or without flowers.', who: 'Léa, Lyon · Aug 2026' }, { stars: 4, text: 'Smaller than I pictured, so check the dimensions. Still lovely.', who: 'Chris, Dublin · July 2026' }],
+      workspace: [{ stars: 5, text: 'My desk finally has a place for everything, and nothing extra.', who: 'Yuki, Osaka · Sept 2026' }, { stars: 4, text: 'Great walnut. It marks a little with a wet mug, so use a coaster.', who: 'Ben, Amsterdam · Aug 2026' }],
+      lifestyle: [{ stars: 5, text: 'Soft from the first wash. It really does feel like you have owned it for years.', who: 'Clara, Paris · Sept 2026' }, { stars: 5, text: 'Runs slightly large. I sized down and it is perfect.', who: 'Ella, Copenhagen · July 2026' }],
+      gifts: [{ stars: 5, text: 'Bought it as a gift and kept it. The veining on mine is beautiful.', who: 'Noah, Brooklyn · Aug 2026' }, { stars: 4, text: 'Solid and well made. The gift wrap was simple and nice.', who: 'Ana, Madrid · June 2026' }],
+    };
+    const FINISH = { '#e2d5c1': 'Travertine', '#3a3634': 'Graphite', '#c9a37a': 'Natural oak', '#5b3d2b': 'Smoked oak', '#eee8de': 'Ivory', '#161413': 'Black', '#b9bea9': 'Sage', '#665a54': 'Umber', '#dde0dc': 'Clear', '#b9765c': 'Terracotta', '#cfae93': 'Tan' };
+    return { CATS, B, PRODUCTS, COLLECTIONS, DESC, SPECS, DIMS, DIMS_ID, REVIEWS, FINISH, byId: Object.fromEntries(PRODUCTS.map((x) => [x.id, x])), catById: Object.fromEntries(CATS.map((c) => [c.id, c])) };
+  })();
+
+  state = (() => {
+    let route = { name: 'home' };
+    try { route = JSON.parse(localStorage.getItem('forme-proto-route')) || route; } catch (e) {}
+    return {
+      route,
+      cart: [{ key: 'halo|Travertine', id: 'halo', qty: 1, variant: 'Travertine' }, { key: 'carafe|Sage', id: 'carafe', qty: 2, variant: 'Sage' }],
+      prev: null, fCol: [], co: { email: '', name: '', address: '', city: '', postcode: '', country: 'Portugal', card: '', exp: '', cvc: '' }, coErr: {}, coBusy: false, ship: 'standard', order: null,
+      wish: ['lounge', 'vase'], follows: ['ferro'], drawer: false, sheet: false, toasts: [],
+      fMakers: [], fPrice: [], fType: [], fMat: [], sort: 'featured', variant: null, qty: 1, hoverCat: 'lighting',
+      email: '', subscribed: false, searchQ: route.q || '',
+      user: (() => { try { return JSON.parse(localStorage.getItem('forme-proto-user')); } catch (e) { return null; } })(),
+      auth: null, authReason: null, af: { name: '', email: '', password: '', letters: true }, afErr: {}, afBusy: false, showPw: false,
+    };
+  })();
+
+  accounts() {
+    let a = {};
+    try { a = JSON.parse(localStorage.getItem('forme-proto-accounts')) || {}; } catch (e) {}
+    if (!a['demo@forme.store']) a['demo@forme.store'] = { name: 'Ada Lindqvist', password: 'forme1234', since: '2024', letters: true };
+    return a;
+  }
+  openAuth(mode, reason) {
+    this.setState((s) => ({ auth: mode, authReason: reason || null, afErr: {}, afBusy: false, showPw: false, af: { ...s.af, password: '' } }));
+  }
+  setAf(k, v) { this.setState((s) => ({ af: { ...s.af, [k]: v }, afErr: { ...s.afErr, [k]: null, form: null } })); }
+  authSubmit(e) {
+    e && e.preventDefault();
+    const s = this.state; if (s.afBusy) return;
+    const mode = s.auth, f = s.af, email = f.email.trim().toLowerCase(), err = {};
+    if (mode === 'register' && !f.name.trim()) err.name = 'Tell us what to call you.';
+    if (!email) err.email = 'Enter your email.'; else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) err.email = 'That doesn’t look like an email address.';
+    if (mode !== 'reset') { if (!f.password) err.password = 'Enter your password.'; else if (mode === 'register' && f.password.length < 8) err.password = 'Use at least 8 characters.'; }
+    if (Object.keys(err).length) return this.setState({ afErr: err });
+    this.setState({ afBusy: true });
+    setTimeout(() => {
+      const acc = this.accounts();
+      if (mode === 'reset') return this.setState({ auth: 'resetSent', afBusy: false });
+      if (mode === 'signin') {
+        const a = acc[email];
+        if (!a) return this.setState({ afBusy: false, afErr: { form: 'No account for this email.', formAction: 'register' } });
+        if (a.password !== f.password) return this.setState({ afBusy: false, afErr: { password: 'That password doesn’t match.' } });
+        return this.finishAuth({ name: a.name, email, since: a.since, letters: a.letters }, 'Welcome back, ' + a.name.split(' ')[0] + '.');
+      }
+      if (acc[email]) return this.setState({ afBusy: false, afErr: { form: 'There’s already an account for this email.', formAction: 'signin' } });
+      const u = { name: f.name.trim(), email, since: String(new Date().getFullYear()), letters: f.letters };
+      acc[email] = { ...u, password: f.password };
+      try { localStorage.setItem('forme-proto-accounts', JSON.stringify(acc)); } catch (e2) {}
+      this.finishAuth(u, 'Account created. Welcome to FORME.');
+    }, 650);
+  }
+  finishAuth(u, msg) {
+    try { localStorage.setItem('forme-proto-user', JSON.stringify(u)); } catch (e) {}
+    this.setState({ user: u, auth: null, afBusy: false, af: { name: '', email: '', password: '', letters: true } });
+    this.toast({ message: msg });
+  }
+  signOut() {
+    try { localStorage.removeItem('forme-proto-user'); } catch (e) {}
+    this.setState({ user: null });
+    this.go({ name: 'home' });
+    this.toast({ message: 'Signed out.' });
+  }
+
+  scroller = React.createRef();
+  rail = React.createRef();
+  catRail = React.createRef();
+  SUBS = {
+    furniture: [['Seating', 'clay', 'assets/chair-photo-c.png'], ['Tables', 'sand', 'assets/hd/p-dining.jpg'], ['Storage', 'ash', 'assets/hd/p-sideboard.jpg'], ['Sofas', 'ivory', 'assets/hd/p-sofa.jpg']],
+    lighting: [['Table lamps', 'sand', 'assets/lamp-photo-c.png'], ['Floor lamps', 'ivory', 'assets/hd/p-arc.jpg'], ['Pendants', 'mist', 'assets/hd/p-pendant.jpg'], ['Wall lights', 'slate', 'assets/hd/p-sconce.jpg']],
+    decor: [['Vases', 'sage', 'assets/hd/p-vase.jpg'], ['Textiles', 'olive', 'assets/hd/p-throw.jpg'], ['Mirrors', 'clay', 'assets/hd/p-mirror.jpg'], ['Rugs', 'ivory', 'assets/hd/p-rug.jpg']],
+    kitchen: [['Tableware', 'ivory', 'assets/hd/p-dinner.jpg'], ['Drinkware', 'mist', 'assets/hd/p-mugs.jpg'], ['Teaware', 'slate', 'assets/hd/p-teapot.jpg'], ['Serveware', 'sand', 'assets/hd/p-bowl.jpg']],
+    workspace: [['Organisers', 'mist', 'assets/hd/p-tray.jpg'], ['Stationery', 'olive', 'assets/hd/p-notebook.jpg'], ['Stands', 'ash', 'assets/hd/p-stand.jpg'], ['Desk lamps', 'sand', 'assets/hd/p-desklamp.jpg']],
+    lifestyle: [['Bath', 'sand', 'assets/hd/p-towels.jpg'], ['Bedding', 'sage', 'assets/hd/p-sheets.jpg'], ['Bags', 'terracotta', 'assets/hd/p-tote.jpg'], ['Home wear', 'olive', 'assets/hd/p-slippers.jpg']],
+    gifts: [['Candle holders', 'clay', 'assets/hd/p-candle.jpg'], ['For the host', 'ivory', 'assets/hd/p-coasters.jpg'], ['For the desk', 'sage', 'assets/hd/p-paperweight.jpg'], ['Frames', 'terracotta', 'assets/hd/p-frame.jpg']],
+  };
+  buildHero() {
+    const NS = window.FORMEDesignSystem_c41e46;
+    if (!NS || !NS.Media) { setTimeout(() => this.forceUpdate(), 120); return null; }
+    if (this._hero) return this._hero;
+    const h = React.createElement, D = this.D;
+    const C = (src, pid, hgt, y, rot) => ({ kind: 'cut', src: 'assets/cutouts-clean/' + src + '.png', pid, hgt, y, rot });
+    const set = [
+      C('sofa', 'lounge', 32, 18, -9),
+      C('pendant2', 'pendant', 38, -30, 12),
+      { kind: 'card', pid: 'halo', y: 6, rot: -11, w: 'clamp(96px,8.5cqi,132px)' },
+      C('bowl', 'dinner', 14, 34, 14),
+      C('vase', 'vase', 40, -16, -13),
+      C('diningchair', 'stool', 56, 14, 8),
+      C('sculpture2', 'candle', 20, -34, -15),
+      C('throw', 'throw', 26, 30, 10),
+      C('floorlamp', 'arc', 70, -4, -6),
+      C('pillow2', 'throw', 24, -30, 16),
+      { kind: 'card', pid: 'lounge', y: 12, rot: 9, w: 'clamp(124px,12cqi,184px)' },
+      C('tablelamp2', 'halo', 30, -24, -12),
+      C('stool2', 'stool', 28, 30, 13),
+      C('olive', 'throw', 62, -2, -7),
+      C('bowl2', 'dinner', 18, 32, -16),
+      C('armchair', 'lounge', 38, -20, 11),
+      C('books', 'notebook', 20, 26, -10),
+      C('vase2', 'vase', 32, -28, 15),
+      C('sideboard', 'sideboard', 30, 20, -5),
+      C('wateringcan', 'mugs', 22, -32, -14),
+      C('lounge2', 'lounge', 50, 12, 10),
+      C('sculpture', 'candle', 16, -34, 18),
+      C('roundtable', 'candle', 30, 26, -8),
+      C('pendant', 'pendant', 34, -26, 13),
+      C('officechair', 'stool', 54, 8, -11),
+      C('pillow', 'throw', 18, 34, 9),
+      C('sidetable', 'stool', 26, -22, -15),
+      C('tablelamp', 'mushroom', 42, 10, 7),
+    ];
+    const card = (p, w) => h('div', { style: { width: w, background: 'var(--surface)', borderRadius: 24, padding: 6, boxShadow: 'var(--shadow-2)', display: 'flex', flexDirection: 'column' } },
+      h('img', { src: p.image, alt: p.name, draggable: false, style: { display: 'block', width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', borderRadius: 18 } }),
+      h('div', { style: { padding: '10px 8px 6px', display: 'flex', flexDirection: 'column', gap: 3, textAlign: 'left' } },
+        h('span', { style: { fontSize: 11, color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' } }, p.brand),
+        h('span', { style: { fontFamily: "'Satoshi','Switzer',sans-serif", fontWeight: 500, fontSize: 'clamp(12px,1cqi,15px)', letterSpacing: '-0.02em', lineHeight: 1.2, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' } }, p.name),
+        h('div', { style: { overflow: 'hidden' } }, h(NS.Rating, { value: p.rating, size: 'sm' })),
+        h('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 6, marginTop: 6, paddingTop: 8, borderTop: '1px solid var(--border)' } },
+          h(NS.Price, { amount: p.price, size: 'sm' }),
+          h('div', { style: { display: 'flex', gap: 4 } }, (p.colors || []).slice(0, 3).map((c, k) => h('span', { key: k, style: { width: 10, height: 10, borderRadius: 9999, background: c, boxShadow: k === 0 ? '0 0 0 1.5px var(--surface), 0 0 0 2.5px var(--stone-300)' : 'inset 0 0 0 1px rgba(22,20,19,0.08)' } }))))));
+    const cuts = set.filter((x) => x.kind === 'cut');
+    const SETS = [0, 1, 2].map((s) => cuts.filter((_, i) => i % 3 === s).slice(0, 8));
+    const CARDS = ['lounge', 'halo', 'vase', 'carafe', 'sofa', 'throw'];
+    const CARD_ROT = 7;
+    const els = [...SETS.flatMap((arr, s) => arr.map((it, j) => ({ kind: 'cut', it, s, j }))), ...CARDS.map((pid, ci) => ({ kind: 'card', pid, ci }))];
+    const FC = els.findIndex((e) => e.kind === 'card');
+    const rnd = (c, j, k) => { const v = Math.sin(c * 127.1 + j * 311.7 + k * 74.7) * 43758.5453; return v - Math.floor(v); };
+    const Hero = () => {
+      const root = React.useRef(null), refs = React.useRef([]), flags = React.useRef({ dirty: true });
+      React.useEffect(() => {
+        const reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        const TAU = Math.PI * 2, P = 5, TS = 1.6, OUT = 1.0, IN = 1.1;
+        const ease = (a, b, x) => { const k = Math.min(1, Math.max(0, (x - a) / (b - a))); return 0.5 - 0.5 * Math.cos(Math.PI * k); };
+        const rv = els.map((_, n) => [rnd(n, 1, 21), rnd(n, 2, 22), rnd(n, 3, 23), rnd(n, 4, 24)]);
+        const alpha = {};
+        let OS = 1, CS = 1, raf = 0, W = 0, H = 0, mob = false, ready = false, readyT = 0, mx = 0, my = 0, tx = 0, ty = 0;
+        let meas = [], lay = [], pos = [];
+        const sched = new Map();
+        const t0 = performance.now();
+        const aBox = (im) => {
+          const key = im.currentSrc || im.src; if (alpha[key]) return alpha[key];
+          let r = { l: 0.04, t: 0.04, r: 0.96, b: 0.96 };
+          try {
+            const cw = 96, ch = Math.max(8, Math.round(96 * im.naturalHeight / im.naturalWidth));
+            const cv = document.createElement('canvas'); cv.width = cw; cv.height = ch;
+            const cx = cv.getContext('2d'); cx.drawImage(im, 0, 0, cw, ch);
+            const d = cx.getImageData(0, 0, cw, ch).data; let l = cw, tp = ch, rr = -1, b = -1;
+            for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) if (d[(y * cw + x) * 4 + 3] > 60) { if (x < l) l = x; if (x > rr) rr = x; if (y < tp) tp = y; if (y > b) b = y; }
+            if (rr >= 0) r = { l: l / cw, t: tp / ch, r: (rr + 1) / cw, b: (b + 1) / ch };
+          } catch (err) {}
+          alpha[key] = r; return r;
+        };
+        const measureEl = (n) => {
+          const e = els[n], el = refs.current[n]; if (!el || !el.firstChild) return null;
+          const im = el.firstChild.firstChild; if (!im) return null;
+          if (e.kind === 'card') { const w = im.offsetWidth, hh = im.offsetHeight; if (!w || !hh) return null; const a = CARD_ROT * Math.PI / 180; return { vw: w * Math.cos(a) + hh * Math.sin(a), vh: w * Math.sin(a) + hh * Math.cos(a), ox: 0, oy: 0 }; }
+          if (!im.complete || !im.naturalWidth || !im.offsetWidth) return null;
+          const rw = im.offsetWidth, rh = im.offsetHeight, fb = aBox(im);
+          const w0 = (fb.r - fb.l) * rw, h0 = (fb.b - fb.t) * rh, cx = ((fb.l + fb.r) / 2 - 0.5) * rw, cy = ((fb.t + fb.b) / 2 - 0.5) * rh;
+          const a = e.it.rot * Math.PI / 180, ca = Math.abs(Math.cos(a)), sa = Math.abs(Math.sin(a));
+          return { vw: w0 * ca + h0 * sa, vh: w0 * sa + h0 * ca, ox: cx * Math.cos(a) - cy * Math.sin(a), oy: cx * Math.sin(a) + cy * Math.cos(a) };
+        };
+        const relayout = (t) => {
+          const rr = root.current && root.current.getBoundingClientRect(); if (!rr || !rr.width || !rr.height) return false;
+          const m = els.map((_, n) => measureEl(n));
+          const cardsOk = CARDS.every((_, ci) => m[FC + ci]);
+          if (!cardsOk || (m.slice(0, FC).some((x) => !x) && t < 1.5)) return false;
+          W = rr.width; H = rr.height; mob = W < 600; OS = W < 600 ? 0.5 : W < 980 ? 0.82 : 1;
+          meas = m.map((x, n) => x && els[n].kind === 'cut' ? { vw: x.vw * OS, vh: x.vh * OS, ox: x.ox * OS, oy: x.oy * OS } : x);
+          const DX = (mob ? 4 : 8) + 4, DY = (mob ? 5 : 10) + 4, EDGE = mob ? 16 : 28, TOP = 12, BOT = 26;
+          const cardW = Math.max(...CARDS.map((_, ci) => m[FC + ci].vw)) + 8, cardH = Math.max(...CARDS.map((_, ci) => m[FC + ci].vh)) + 8;
+          const gapOf = (a, b) => mob ? 12 : Math.max(40, Math.min(70, 0.24 * Math.max(a, b)));
+          CS = mob ? 0.76 : 1;
+          const cW = cardW * CS, cH = cardH * CS, cE = cW / 2;
+          if (mob) {
+            const g = 6, sw = Math.max(40, W / 2 - cE - g - EDGE + 6), sh = (H - TOP - BOT) / 3;
+            lay = SETS.map((arr, s) => {
+              const out = arr.map(() => null);
+              arr.map((_, j) => j).slice(0, 6).forEach((j, k) => {
+                const side = k % 2 === 0 ? -1 : 1, row = (Math.floor(k / 2) + (side > 0 ? 1 : 0) + s) % 3, raw = m[s * 8 + j];
+                const kk = raw ? Math.min(sw * 0.86 / raw.vw, sh * 0.86 / raw.vh, 0.62) : 0.4;
+                const jx = (rnd(s, j, 41) - 0.5) * Math.max(0, sw - (raw ? raw.vw * kk : sw)) * 0.8;
+                const jy = (rnd(s, j, 42) - 0.5) * Math.max(0, sh - (raw ? raw.vh * kk : sh)) * 0.6;
+                out[j] = { x: side * (cE + g + sw / 2) + jx, y: -H / 2 + TOP + sh * (row + 0.5) + jy, w: raw ? raw.vw * kk : sw, h: raw ? raw.vh * kk : sh, k: kk, ox: raw ? raw.ox * kk : 0, oy: raw ? raw.oy * kk : 0 };
+              });
+              return out;
+            });
+            sched.clear();
+            return true;
+          }
+          lay = SETS.map((arr, s) => {
+            const out = arr.map(() => null);
+            const boxes = [{ x: 0, y: 0, w: cW, h: cH }];
+            const hit = (b) => boxes.some((o) => Math.abs(o.x - b.x) < (o.w + b.w) / 2 + gapOf(o.w, b.w) && Math.abs(o.y - b.y) < (o.h + b.h) / 2 + gapOf(o.h, b.h) * 0.6);
+            [-1, 1].forEach((sg) => {
+              const mine = arr.map((_, j) => j).filter((j) => meas[s * 8 + j] && (((j + s) % 2 === 0) ? -1 : 1) === sg);
+              const placed = [];
+              mine.forEach((j, q) => {
+                if (placed.length >= (mob ? 3 : 4)) return;
+                const M = meas[s * 8 + j], w = M.vw + 2 * DX, hh = M.vh + 2 * DY;
+                if (hh > H - TOP - BOT) return;
+                const yT = -H / 2 + TOP + hh / 2, yB = H / 2 - BOT - hh / 2;
+                const yM = (yT + yB) / 2, rot3 = (q + s + (sg > 0 ? 1 : 0)) % 3;
+                const ys = mob ? [[yT, yM, yB], [yM, yB, yT], [yB, yT, yM]][rot3] : ((q + s + (sg > 0 ? 1 : 0)) % 2 === 0) ? [yT, yB] : [yB, yT];
+                for (let d = cE + (mob ? 8 : 30) + w / 2; d + w / 2 <= W / 2 - EDGE; d += 6) {
+                  for (const y of ys) { const b = { x: sg * d, y, w, h: hh }; if (!hit(b)) { boxes.push(b); placed.push(j); out[j] = b; return; } }
+                }
+              });
+              if (placed.length) {
+                let fct = Infinity;
+                placed.forEach((j) => { const b = out[j], dd = Math.abs(b.x) - cE; if (dd > 0) fct = Math.min(fct, (W / 2 - EDGE - b.w / 2 - cE) / dd); });
+                fct = Math.max(1, Math.min(isFinite(fct) ? fct : 1, 2.4));
+                placed.forEach((j) => { const b = out[j]; b.x = sg * (cE + (Math.abs(b.x) - cE) * fct); });
+              }
+            });
+            return out;
+          });
+          sched.clear();
+          return true;
+        };
+        const schedule = (c) => {
+          if (sched.has(c)) return sched.get(c);
+          const A = ((c % 3) + 3) % 3, B = (((c + 1) % 3) + 3) % 3;
+          const outs = lay[A].map((b, j) => b ? j : -1).filter((j) => j >= 0).sort((a, b) => lay[A][a].x - lay[A][b].x);
+          const ins = lay[B].map((b, j) => b ? j : -1).filter((j) => j >= 0).sort((a, b) => lay[B][a].x - lay[B][b].x);
+          const so = {}, si = {};
+          outs.forEach((j, r) => { so[j] = TS + r * 0.14 + rnd(c, j, 31) * 0.05; });
+          ins.forEach((j, r) => {
+            const b = lay[B][j]; let st = TS + 0.5 + r * 0.14 + rnd(c, j, 32) * 0.05;
+            outs.forEach((jo) => { const o = lay[A][jo]; if (Math.abs(o.x - b.x) < (o.w + b.w) / 2 + 40 && Math.abs(o.y - b.y) < (o.h + b.h) / 2 + 40) st = Math.max(st, so[jo] + OUT + 0.05); });
+            si[j] = Math.min(st, P - IN - 0.2);
+          });
+          const v = { so, si }; sched.set(c, v); if (sched.size > 4) sched.delete(sched.keys().next().value); return v;
+        };
+        const hide = (el) => { if (el.style.visibility !== 'hidden') { el.style.visibility = 'hidden'; el.style.opacity = '0'; el.style.pointerEvents = 'none'; } };
+        const show = (el, n, x, y, rot, sc, op) => {
+          const p = pos[n];
+          if (!p || el.style.visibility === 'hidden') pos[n] = { x, y }; else { p.x += (x - p.x) * 0.12; p.y += (y - p.y) * 0.12; }
+          el.style.visibility = 'visible'; el.style.opacity = op.toFixed(3); el.style.pointerEvents = op > 0.6 ? 'auto' : 'none';
+          el.style.transform = 'translate3d(' + pos[n].x.toFixed(2) + 'px,' + pos[n].y.toFixed(2) + 'px,0) rotate(' + rot.toFixed(3) + 'deg) scale(' + sc.toFixed(4) + ')';
+        };
+        const step = (now) => {
+          const t = (now - t0) / 1000;
+          if (flags.current.dirty && relayout(t)) { flags.current.dirty = false; if (!ready) { ready = true; readyT = t; } }
+          if (!ready) return;
+          if (mob) { tx = 0; ty = 0; }
+          mx += (tx - mx) * 0.025; my += (ty - my) * 0.025;
+          const tau = reduce ? 0 : t - readyT, c = Math.floor(tau / P), local = tau - c * P;
+          const cur = ((c % 3) + 3) % 3, nxt = (((c + 1) % 3) + 3) % 3, S = local >= TS && !reduce ? schedule(c) : null;
+          const fm = reduce ? 0 : mob ? 0.5 : 1, reveal = (d) => reduce ? 1 : ease(d, d + 1.4, t - readyT);
+          els.forEach((e, n) => {
+            const el = refs.current[n]; if (!el) return;
+            const [r1, r2, r3, r4] = rv[n];
+            if (e.kind === 'card') {
+              const oc = ((c % 6) + 6) % 6, nc = (((c + 1) % 6) + 6) % 6, cs = TS + 0.45;
+              let op = 0, sc = 1;
+              if (e.ci === oc && !(S && local >= cs + 0.8)) { if (!S || local < cs) op = 1; else if (local < cs + 0.5) { const k = ease(cs, cs + 0.5, local); op = 1 - 0.3 * k; sc = 1 - 0.01 * k; } else { op = 0.7 * (1 - ease(cs + 0.5, cs + 0.8, local)); sc = 0.99; } }
+              else if (S && e.ci === nc && local >= cs + 0.5) { if (local < cs + 0.8) { op = 0.7 * ease(cs + 0.5, cs + 0.8, local); sc = 0.99; } else { const k = ease(cs + 0.8, cs + 1.6, local); op = 0.7 + 0.3 * k; sc = 0.99 + 0.01 * k; } }
+              if (op <= 0.001) return hide(el);
+              op *= reveal(0);
+              show(el, n, 1.5 * fm * Math.sin(TAU * t / 13 + 1) - mx * 1.5, 3 * fm * Math.sin(TAU * t / 11), CARD_ROT + 0.3 * fm * Math.sin(TAU * t / 15), sc * CS, op);
+              return;
+            }
+            const L = lay[e.s] && lay[e.s][e.j], M = meas[n];
+            if (!L || (!M && L.k == null)) return hide(el);
+            let role = null;
+            if (!S) role = e.s === cur ? 'still' : null; else role = e.s === cur ? 'out' : e.s === nxt ? 'in' : null;
+            if (!role) return hide(el);
+            const ux = Math.sign(L.x) * 0.9, uy = L.y < 0 ? -0.45 : 0.45, dist = 8 + 7 * r1;
+            let op = 1, sc = 1, ox = 0, oy = 0, dr = 0;
+            if (role === 'out') { const st = S.so[e.j], p = ease(st, st + OUT, local); op = 1 - p; ox = ux * dist * p; oy = uy * dist * p; dr = (r2 < 0.5 ? -0.8 : 0.8) * p; }
+            else if (role === 'in') { const st = S.si[e.j], p = ease(st, st + IN, local); op = p; ox = ux * dist * (1 - p); oy = uy * dist * (1 - p); sc = 0.98 + 0.02 * p; dr = (r3 < 0.5 ? -0.8 : 0.8) * (1 - p); }
+            if (op <= 0.001) return hide(el);
+            if (c === 0 && role !== 'in') op *= reveal(0.15 + Math.abs(L.x) / W * 0.8);
+            const fx = (3 + 5 * r1) * fm * Math.sin(TAU * t / (10 + 6 * r2) + r3 * TAU);
+            const fy = (4 + 6 * r2) * fm * Math.sin(TAU * t / (12 + 7 * r3) + r4 * TAU);
+            const fr = (0.5 + 0.5 * r3) * fm * Math.sin(TAU * t / (14 + 6 * r4) + r1 * TAU);
+            const fs = 1 + 0.005 * fm * Math.sin(TAU * t / (13 + 5 * r1) + r2 * TAU);
+            const dep = 0.6 + 0.6 * r4;
+            show(el, n, L.x - (L.k != null ? L.ox : M.ox) + ox + fx - mx * 2.5 * dep, L.y - (L.k != null ? L.oy : M.oy) + oy + fy - my * 1.5 * dep, e.it.rot + fr + dr, sc * fs * (L.k != null ? L.k : OS), op);
+          });
+        };
+        const frame = (now) => { try { step(now); } catch (err) {} raf = requestAnimationFrame(frame); };
+        const onMove = (ev) => { const rr = root.current && root.current.getBoundingClientRect(); if (!rr) return; tx = Math.max(-1, Math.min(1, ((ev.clientX - rr.left) / rr.width - 0.5) * 2)); ty = Math.max(-1, Math.min(1, ((ev.clientY - rr.top) / rr.height - 0.5) * 2)); };
+        const onLeave = () => { tx = 0; ty = 0; };
+        const ro = new ResizeObserver(() => { flags.current.dirty = true; });
+        root.current && ro.observe(root.current);
+        window.addEventListener('pointermove', onMove, { passive: true });
+        document.addEventListener('pointerleave', onLeave);
+        try { step(performance.now()); } catch (err) {}
+        raf = requestAnimationFrame(frame);
+        return () => { cancelAnimationFrame(raf); ro.disconnect(); window.removeEventListener('pointermove', onMove); document.removeEventListener('pointerleave', onLeave); };
+      }, []);
+      const dirty = () => { flags.current.dirty = true; };
+      return h('div', { ref: root, style: { position: 'absolute', inset: 0, overflow: 'hidden' } },
+        els.map((e, n) => {
+          const p = D.byId[e.kind === 'card' ? e.pid : e.it.pid];
+          const inner = e.kind === 'card' ? card(p, 'clamp(124px,12cqi,184px)') : h('img', { src: e.it.src, alt: p.name, draggable: false, onLoad: dirty, style: { display: 'block', height: Math.min(e.it.hgt, 46) + '%', width: 'auto' } });
+          return h('div', { key: n, ref: (el) => { refs.current[n] = el; }, style: { position: 'absolute', left: '50%', top: 0, width: 0, height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', opacity: 0, visibility: 'hidden', pointerEvents: 'none', willChange: 'transform, opacity' } },
+            h('button', { type: 'button', 'aria-label': p.name, tabIndex: -1, onClick: () => this.go({ name: 'product', id: p.id }), style: { all: 'unset', cursor: 'pointer', flex: 'none', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' } }, inner));
+        }));
+    };
+    this._hero = h(Hero);
+    return this._hero;
+  }
+
+  go(r, mode) {
+    try { localStorage.setItem('forme-proto-route', JSON.stringify(r)); } catch (e) {}
+    this.setState((s) => ({ route: r, prev: s.route, hist: mode === 'root' ? [] : mode === 'back' ? (s.hist || []).slice(0, -1) : [...(s.hist || []), s.route].slice(-20), fCol: [], fMakers: [], fPrice: [], fType: [], fMat: [], sort: 'featured', variant: null, qty: 1, sheet: false, drawer: false, searchQ: r.name === 'search' ? (r.q != null ? r.q : s.searchQ) : s.searchQ }));
+    if (this.scroller.current) this.scroller.current.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }
+  navBack() {
+    const h = this.state.hist || [];
+    this.go(h.length ? h[h.length - 1] : { name: 'home' }, 'back');
+  }
+  toast(t) {
+    const id = Math.random().toString(36).slice(2);
+    this.setState((s) => ({ toasts: [...s.toasts.slice(-1), { id, ...t }] }));
+  }
+  dismiss(id) { this.setState((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })); }
+  finish(hex) { return this.D.FINISH[hex] || 'Standard'; }
+  addToCart(p, qty = 1, variant) {
+    const v = variant || (p.colors ? this.finish(p.colors[0]) : 'Standard');
+    const key = p.id + '|' + v;
+    this.setState((s) => ({ cart: s.cart.find((l) => l.key === key) ? s.cart.map((l) => l.key === key ? { ...l, qty: l.qty + qty } : l) : [...s.cart, { key, id: p.id, qty, variant: v }] }));
+    this.toast({ message: 'Added ' + p.name, variant: 'cart', action: 'View cart', onAction: () => this._mobile ? this.go({ name: 'cart' }) : this.setState({ drawer: true }) });
+  }
+  toggleWish(p) {
+    const has = this.state.wish.includes(p.id);
+    this.setState((s) => ({ wish: has ? s.wish.filter((x) => x !== p.id) : [...s.wish, p.id] }));
+    if (!has) this.toast({ message: 'Saved to wishlist', variant: 'wishlist', action: 'View', onAction: () => this.go({ name: 'wishlist' }) });
+  }
+  toggleFollow(b) {
+    const has = this.state.follows.includes(b.id);
+    this.setState((s) => ({ follows: has ? s.follows.filter((x) => x !== b.id) : [...s.follows, b.id] }));
+    if (!has) this.toast({ message: 'Following ' + b.name + ' — we’ll tell you when they release something.' });
+  }
+  pc(p) {
+    if (p.badge === 'New' || p.badge === 'Sale') p = { ...p, badge: p.badge + '\u2060' };
+    return { p, wished: this.state.wish.includes(p.id), onWish: () => this.toggleWish(p), open: () => this.go({ name: 'product', id: p.id }), add: () => this.addToCart(p) };
+  }
+  reviewsVM(prod, D) {
+    const extra = [{ stars: 5, text: 'Packed with care and no plastic. It arrived a day early.', who: 'Mia, Vienna · Aug 2026' }, { stars: 4, text: 'Exactly as described. I would buy from this maker again.', who: 'Leo, Ghent · June 2026' }];
+    const list = [...(D.REVIEWS[prod.cat] || []), ...extra];
+    const mk = this.makerVM(D.B[prod.brandId]);
+    const photos = [prod.image, ...mk.swatches, mk.photo].filter(Boolean);
+    const pages = Math.max(1, list.length - 1);
+    const pg = Math.min(this.state.revPage || 0, pages - 1);
+    const set = (n) => this.setState({ revPage: (n + pages) % pages });
+    return {
+      prodReviews: list.slice(pg, pg + 2).map((r, i) => ({ ...r, photo: photos[(pg + i) % photos.length] })),
+      revDots: Array.from({ length: pages }, (_, i) => ({ label: 'Reviews ' + (i + 1), color: i === pg ? 'var(--text-primary)' : 'var(--stone-300, #cfc9c0)', current: i === pg ? 'true' : undefined, go: () => set(i) })),
+      revPrev: () => set(pg - 1), revNext: () => set(pg + 1),
+    };
+  }
+  makerVM(b) {
+    const f = this.state.follows.includes(b.id);
+    return { ...b, photo: 'assets/mk-' + b.id + '.png', swatches: (b.id === 'orrin' ? [0, 1] : [0, 1, 2]).map((k) => 'assets/mk-' + b.id + '-' + k + '.png'), meta: b.location + ' · ' + b.category, shot: b.name + ' studio, ' + b.location, thumbs: this.D.PRODUCTS.filter((x) => x.brandId === b.id).slice(0, 3).map((x) => ({ tone: x.tone })), followLabel: f ? 'Following' : 'Follow', followVariant: f ? 'primary' : 'secondary', follow: () => this.toggleFollow(b), open: () => this.go({ name: 'maker', id: b.id }) };
+  }
+  applyFilters(list) {
+    const { fMakers, fPrice, fType, fMat, fCol, sort } = this.state;
+    let r = list.filter((p) => (!fMakers.length || fMakers.includes(p.brandId)) && (!fType.length || fType.includes(p.type)) && (!fMat.length || fMat.includes(p.material)) && (!fCol.length || (p.colors || []).some((c) => fCol.includes(this.finish(c)))) && (!fPrice.length || fPrice.some((b) => (b === 'u100' && p.price < 100) || (b === 'm' && p.price >= 100 && p.price <= 300) || (b === 'o300' && p.price > 300))));
+    r = [...r];
+    if (sort === 'price-asc') r.sort((a, b) => a.price - b.price);
+    else if (sort === 'price-desc') r.sort((a, b) => b.price - a.price);
+    else if (sort === 'newest') r.sort((a, b) => a.added - b.added);
+    else if (sort === 'rating') r.sort((a, b) => b.rating - a.rating);
+    return r;
+  }
+
+  placeOrder(e, totals) {
+    e && e.preventDefault();
+    const s = this.state, c = s.co, err = {};
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.email.trim())) err.email = 'Enter an email for your receipt.';
+    if (!c.name.trim()) err.name = 'Who should we deliver to?';
+    if (!c.address.trim()) err.address = 'Enter a street address.';
+    if (!c.city.trim()) err.city = 'Enter a city.';
+    if (!c.postcode.trim()) err.postcode = 'Enter a postcode.';
+    if (c.card.replace(/\D/g, '').length < 12) err.card = 'Check the card number.';
+    if (!/^\d{2}\s?\/\s?\d{2}$/.test(c.exp.trim())) err.exp = 'Use MM / YY.';
+    if (!/^\d{3,4}$/.test(c.cvc.trim())) err.cvc = '3 or 4 digits.';
+    if (Object.keys(err).length) { this.setState({ coErr: err }); this.toast({ message: 'Check the highlighted fields.' }); return; }
+    this.setState({ coBusy: true });
+    setTimeout(() => {
+      const order = { no: 'FM-' + String(Math.floor(40000 + Math.random() * 9999)), first: c.name.trim().split(' ')[0], email: c.email.trim(), eta: totals.eta, items: totals.items, totalLabel: totals.totalLabel };
+      this.setState({ order, cart: [], coBusy: false, coErr: {} });
+      if (this.scroller.current) this.scroller.current.scrollTop = 0; window.scrollTo(0, 0);
+    }, 700);
+  }
+
+  renderVals() {
+    const D = this.D, s = this.state, r = s.route;
+    const mobile = (this.props.viewport ?? 'desktop') === 'mobile';
+    this._mobile = mobile;
+    const freeAt = this.props.freeShippingAt ?? 250;
+    const fmt = (n) => n.toLocaleString('en-US');
+    const fd = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); };
+    const eta = fd(3) + ' – ' + fd(5);
+    const home = { label: 'Home', onClick: () => this.go({ name: 'home' }) };
+
+    const cartLines = s.cart.map((l) => { const p = D.byId[l.id]; return { item: { ...p, qty: l.qty, variant: l.variant }, onQty: (_, q) => this.setState((st) => ({ cart: st.cart.map((x) => x.key === l.key ? { ...x, qty: q } : x) })), remove: () => { this.setState((st) => ({ cart: st.cart.filter((x) => x.key !== l.key) })); this.toast({ message: 'Removed ' + p.name, action: 'Undo', onAction: () => this.setState((st) => ({ cart: [...st.cart, l] })) }); } }; });
+    const cartCount = s.cart.reduce((a, l) => a + l.qty, 0);
+    const subtotal = s.cart.reduce((a, l) => a + D.byId[l.id].price * l.qty, 0);
+    const expressAt = 500, shipFree = subtotal >= freeAt;
+    const cartRows = s.cart.map((l, i) => { const p = D.byId[l.id], vm = cartLines[i];
+      const setV = (v) => this.setState((st) => ({ cart: st.cart.map((x) => x.key === l.key ? { ...x, variant: v, key: l.id + '|' + v } : x) }));
+      return { ...p, qty: l.qty, variant: l.variant, total: '$' + fmt(p.price * l.qty), onQty: (q) => vm.onQty(null, typeof q === 'number' ? q : l.qty), remove: vm.remove,
+        open: () => this.go({ name: 'product', id: p.id }), wished: s.wish.includes(p.id), onWish: () => this.toggleWish(p),
+        saveLabel: s.wish.includes(p.id) ? 'Saved' : 'Save for later', hasSwatches: !!p.colors, swatches: (p.colors || []).map((hex) => { const lab = this.finish(hex), on = lab === l.variant; return { hex, label: lab, pick: () => setV(lab), ring: on ? '0 0 0 2px var(--bg), 0 0 0 3px var(--text-primary)' : 'inset 0 0 0 1px rgba(22,20,19,0.12)' }; }) }; });
+
+    const catRows = D.CATS.map((c, i) => ({ ...c, num: String(i + 1).padStart(2, '0'), count: fmt(c.count), opacity: s.hoverCat === c.id ? 1 : 0.5, hover: () => s.hoverCat !== c.id && this.setState({ hoverCat: c.id }), open: () => this.go({ name: 'category', id: c.id }) }));
+    const hoverCat = D.catById[s.hoverCat];
+    const term = (t) => ({ label: t, go: () => this.go({ name: 'search', q: t }) });
+
+    // listing
+    let listing = null, base = [], crumbs = [];
+    if (r.name === 'category') {
+      const c = D.catById[r.id];
+      if (c) { listing = { eyebrow: fmt(c.count) + ' pieces', title: c.label, blurb: c.blurb, tone: c.tone, shot: c.shot }; base = D.PRODUCTS.filter((p) => p.cat === c.id); crumbs = [home, { label: c.label }]; }
+      else { listing = { eyebrow: 'Updated every Thursday', title: 'New this week.', blurb: 'Every piece added to FORME in the last seven days, newest first.', tone: 'ivory', shot: 'This week’s arrivals laid out on the studio floor' }; base = [...D.PRODUCTS].sort((a, b) => a.added - b.added); crumbs = [home, { label: 'New' }]; }
+    } else if (r.name === 'collection') {
+      const c = D.COLLECTIONS.find((x) => x.id === r.id) || D.COLLECTIONS[0];
+      listing = { eyebrow: 'Collection · ' + c.items.length + ' pieces', title: c.title, blurb: c.description, tone: c.tone, shot: c.shot }; base = c.items.map((id) => D.byId[id]); crumbs = [home, { label: 'Collections', onClick: () => this.go({ name: 'browse' }) }, { label: c.title }];
+    } else if (r.name === 'maker') {
+      const b = D.B[r.id] || D.B.ferro; const m = this.makerVM(b);
+      listing = { eyebrow: b.location + ' · ' + b.category, title: b.name, blurb: b.blurb, tone: b.tone, shot: m.shot, isMaker: true, hasStory: true, story: b.story, followLabel: m.followLabel, followVariant: m.followVariant, follow: m.follow }; base = D.PRODUCTS.filter((p) => p.brandId === b.id); crumbs = [home, { label: 'Makers', onClick: () => this.go({ name: 'makers' }) }, { label: b.name }];
+    }
+    const results = listing ? this.applyFilters(base) : [];
+    const makerIds = [...new Set(base.map((p) => p.brandId))];
+    const priceLabels = { u100: 'Under $100', m: '$100–300', o300: 'Over $300' };
+    const facet = (k) => [...new Set(base.map((p) => p[k]).filter(Boolean))].map((v) => ({ value: v, label: v, count: base.filter((p) => p[k] === v).length }));
+    const typeOpts = facet('type'), matOpts = facet('material');
+    const colNames = [...new Set(base.flatMap((p) => (p.colors || []).map((c) => this.finish(c))))];
+    const colOpts = colNames.map((v) => ({ value: v, label: v, count: base.filter((p) => (p.colors || []).some((c) => this.finish(c) === v)).length }));
+    const activeTags = [...s.fType.map((v) => ({ label: v, remove: () => this.setState((st) => ({ fType: st.fType.filter((x) => x !== v) })) })), ...s.fMat.map((v) => ({ label: v, remove: () => this.setState((st) => ({ fMat: st.fMat.filter((x) => x !== v) })) })), ...s.fCol.map((v) => ({ label: v, remove: () => this.setState((st) => ({ fCol: st.fCol.filter((x) => x !== v) })) })), ...s.fMakers.map((id) => ({ label: D.B[id].name, remove: () => this.setState((st) => ({ fMakers: st.fMakers.filter((x) => x !== id) })) })), ...s.fPrice.map((id) => ({ label: priceLabels[id], remove: () => this.setState((st) => ({ fPrice: st.fPrice.filter((x) => x !== id) })) }))];
+
+    // product
+    let prod = {}, gallery = [], maker = {}, related = [], relatedTitle = '';
+    if (r.name === 'product') {
+      const p = D.byId[r.id] || D.byId.halo; const b = D.B[p.brandId];
+      const variant = s.variant || (p.colors ? this.finish(p.colors[0]) : null);
+      prod = { ...p, compareAt: p.compareAt, makerLine: p.brand + ' · ' + b.location, openMaker: () => this.go({ name: 'maker', id: b.id }), desc: 'Made by ' + b.name + ' in ' + b.location.split(',')[0] + (p.material ? ', in ' + p.material.toLowerCase() : '') + '. ' + D.DESC[p.cat], hasColors: !!p.colors, variant, finishOpts: (p.colors || []).map((c) => ({ value: this.finish(c), label: this.finish(c), color: c })), wished: s.wish.includes(p.id), onWish: () => this.toggleWish(p), scarce: p.badge === 'Limited',
+        service: [{ icon: 'truck', text: 'Arrives ' + eta + ', from ' + b.location.split(',')[0] }, { icon: 'package', text: p.price >= freeAt ? 'Free shipping' : 'Free shipping over $' + freeAt + ' · otherwise $12' }, { icon: 'rotate-ccw', text: 'Free returns within 30 days' }, { icon: 'shield-check', text: 'Two-year maker warranty' }],
+        specs: [{ k: 'Material', v: p.material || D.SPECS[p.cat][0][1] }, { k: p.cat === 'kitchen' || p.cat === 'lifestyle' ? 'Size' : 'Dimensions', v: D.DIMS_ID[p.id] || D.DIMS[p.type] || D.SPECS[p.cat][1][1] }, { k: D.SPECS[p.cat][2][0], v: D.SPECS[p.cat][2][1] }, { k: 'Made in', v: b.location }], materialLine: p.material ? 'Material — ' + p.material.toLowerCase() : 'Finish' };
+      gallery = [{ src: p.image, tone: p.tone, label: p.name + ' — front' }, { tone: 'ivory', label: 'Detail — material close-up' }, { tone: b.tone, label: 'In a room, for scale' }, { tone: 'mist', label: 'Packed, ready to ship' }];
+      maker = this.makerVM(b);
+      const same = D.PRODUCTS.filter((x) => x.brandId === b.id && x.id !== p.id);
+      const fill = D.PRODUCTS.filter((x) => x.cat === p.cat && x.brandId !== b.id);
+      related = [...same, ...fill].slice(0, 4).map((x) => this.pc(x));
+      relatedTitle = same.length >= 2 ? 'More from ' + b.name : 'You might also like';
+    }
+
+    // search
+    const q = (s.searchQ || '').trim().toLowerCase();
+    const lev = (a, b) => { if (Math.abs(a.length - b.length) > 1) return 2; const dp = Array.from({ length: a.length + 1 }, (_, i) => [i]); for (let j = 1; j <= b.length; j++) dp[0][j] = j; for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); return dp[a.length][b.length]; };
+    const toks = q.split(/[\s,]+/).filter(Boolean).map((t) => t.length > 3 ? t.replace(/(es|s)$/, '') : t).filter((t) => !['a', 'an', 'the', 'for', 'in', 'and', 'with', 'i', 'need', 'want'].includes(t));
+    const hit = (hay, t) => hay.includes(t) || (t.length >= 5 && hay.split(/[^a-zà-ÿ0-9]+/).some((w) => w.length >= 4 && (lev(w, t) <= 1 || lev(w.slice(0, t.length), t) <= 1)));
+    const hayOf = (p) => [p.name, p.brand, D.catById[p.cat].label, p.type, p.material, ...(p.colors || []).map((c) => this.finish(c)), D.B[p.brandId].location].filter(Boolean).join(' ').toLowerCase();
+    const searchRes = toks.length ? this.applyFilters(D.PRODUCTS.filter((p) => { const hay = hayOf(p); return toks.every((t) => hit(hay, t)); })) : [];
+    const suggest = toks.length ? [...Object.values(D.B).filter((b) => toks.some((t) => hit(b.name.toLowerCase(), t))).map((b) => ({ kind: 'Maker', label: b.name, go: () => this.go({ name: 'maker', id: b.id }) })), ...D.CATS.filter((c) => toks.some((t) => hit(c.label.toLowerCase(), t))).map((c) => ({ kind: 'Category', label: c.label, go: () => this.go({ name: 'category', id: c.id }) })), ...D.COLLECTIONS.filter((c) => toks.some((t) => hit(c.title.toLowerCase(), t))).map((c) => ({ kind: 'Collection', label: c.title, go: () => this.go({ name: 'collection', id: c.id }) }))].slice(0, 4) : [];
+
+    const wishItems = s.wish.map((id) => this.pc(D.byId[id]));
+    const isCart = r.name === 'cart', isWish = r.name === 'wishlist';
+    const isProduct = r.name === 'product';
+    const navActive = r.name === 'category' ? (D.catById[r.id] ? r.id : 'new') : isProduct ? (D.byId[r.id] || {}).cat : r.name === 'makers' || r.name === 'maker' ? 'makers' : undefined;
+    const kilnVM = this.makerVM(D.B.kiln);
+    const footerGo = (l) => { const c = D.CATS.find((x) => x.label === l); if (c) return this.go({ name: 'category', id: c.id }); if (l === 'New this week') return this.go({ name: 'category', id: 'new' }); if (l === 'Collections') return this.go({ name: 'browse' }); if (l === 'Makers') return this.go({ name: 'makers' }); if (l === 'Journal') return this.go({ name: 'maker', id: 'kiln' }); if (l === 'Order status') return s.user ? this.go({ name: 'account' }) : this.openAuth('signin'); if (['Shipping', 'Returns', 'Contact', 'About'].includes(l)) return this.go({ name: 'help' }); this.toast({ message: l + ' isn’t part of this prototype.' }); };
+    const inBrowse = r.name === 'browse' || r.name === 'category' || r.name === 'collection' || isProduct;
+    const railItemsList = [
+      { icon: 'house', label: 'Home', on: r.name === 'home', go: () => this.go({ name: 'home' }, 'root') },
+      { icon: 'search', label: 'Search', on: r.name === 'search', go: () => this.go({ name: 'search' }, 'root') },
+      { icon: 'layout-grid', label: 'Browse', on: inBrowse, go: () => this.go({ name: 'browse' }, 'root') },
+      { icon: 'users-round', label: 'Makers', on: r.name === 'makers' || r.name === 'maker', go: () => this.go({ name: 'makers' }, 'root') },
+      { icon: 'heart', label: 'Saved', on: r.name === 'wishlist', go: () => this.go({ name: 'wishlist' }, 'root') },
+      { icon: 'shopping-bag', label: 'Cart', on: r.name === 'cart' || r.name === 'checkout', go: () => this.go({ name: 'cart' }, 'root'), count: s.cart.reduce((a, l) => a + l.qty, 0) },
+    ].map((x) => ({ ...x, bg: x.on ? 'var(--surface-sunken)' : 'transparent', hasCount: !!x.count }));
+
+    return {
+      pageStyle: mobile ? { padding: '40px 16px', background: 'var(--stone-200)', minHeight: '100vh', boxSizing: 'border-box' } : {},
+      frameStyle: mobile ? { width: 390, height: 844, margin: '0 auto', borderRadius: 48, border: '10px solid var(--stone-900)', overflow: 'hidden', transform: 'translateZ(0)', background: 'var(--bg)', boxShadow: 'var(--shadow-4)', boxSizing: 'content-box' } : {},
+      scrollStyle: mobile ? { height: '100%', overflowY: 'auto', background: 'var(--bg)', scrollbarWidth: 'none', overscrollBehaviorY: 'contain', '--safe-b': '20px', '--bar-h': isProduct || isCart ? '76px' : '0px' } : { background: 'var(--bg)' },
+      panelStyle: mobile ? { flex: 1, minWidth: 0, background: 'var(--surface)', minHeight: '100%', paddingBottom: 0 } : { flex: 1, minWidth: 0, margin: '12px 12px 12px 0', background: 'var(--surface)', borderRadius: 28, minHeight: 'calc(100vh - 24px)', overflow: 'clip', paddingBottom: 0, boxShadow: 'var(--shadow-1)' },
+      hero: r.name === 'home' ? this.buildHero() : null,
+      showTopBar: r.name !== 'home' && r.name !== 'search',
+      showBack: !['home', 'search', 'browse', 'wishlist', 'cart', 'account'].includes(r.name),
+      goBackNav: () => this.navBack(),
+      catRail: this.catRail,
+      catRailNext: () => this.catRail.current && this.catRail.current.scrollBy({ left: 700 }),
+      catBlocks: D.CATS.map((c) => ({ label: c.label, open: () => this.go({ name: 'category', id: c.id }), subs: (this.SUBS[c.id] || []).map(([label, tone, src]) => ({ label, tone, src, open: () => this.go({ name: 'category', id: c.id }) })) })),
+      railItems: railItemsList,
+      scroller: this.scroller, rail: this.rail,
+      navActive, cartCount, wishCount: s.wish.length,
+      secondaryLinks: [{ id: 'makers', label: 'Makers' }, { id: 'journal', label: 'Journal' }],
+      goHome: () => this.go({ name: 'home' }),
+      onNav: (id) => this.go(D.catById[id] ? { name: 'category', id } : id === 'makers' ? { name: 'makers' } : id === 'journal' ? { name: 'maker', id: 'kiln' } : { name: 'category', id: 'new' }),
+      onHeaderSearch: (v) => this.go({ name: 'search', q: v || '' }),
+      onSearchFocus: () => r.name !== 'search' && this.go({ name: 'search' }),
+      openDrawer: () => this.setState({ drawer: true }), closeDrawer: () => this.setState({ drawer: false }), drawerOpen: s.drawer,
+      goWishlist: () => this.go({ name: 'wishlist' }), goCart: () => this.go({ name: 'cart' }), goMakers: () => this.go({ name: 'makers' }), goNew: () => this.go({ name: 'category', id: 'new' }),
+      onAccount: () => s.user ? this.go({ name: 'account' }) : this.openAuth('signin'),
+      signedIn: !!s.user, signedOut: !s.user, accountLabel: s.user ? s.user.name.split(' ')[0] : 'Sign in',
+      userInitials: s.user ? s.user.name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('') : '',
+      tabItems: railItemsList.filter((x) => x.label !== 'Makers').map((x) => ({ ...x, color: x.on ? 'var(--text-primary)' : 'var(--text-muted)', current: x.on ? 'page' : undefined })),
+      isAccount: r.name === 'account' && !!s.user,
+      user: s.user ? { ...s.user, first: s.user.name.split(' ')[0] } : {},
+      accountRows: s.user ? [{ k: 'Name', v: s.user.name }, { k: 'Email', v: s.user.email }, { k: 'Letters from FORME', v: s.user.letters ? 'Subscribed' : 'Not subscribed' }] : [],
+      accountTiles: [
+        { icon: 'heart', label: 'Saved', sub: s.wish.length + (s.wish.length === 1 ? ' piece' : ' pieces'), go: () => this.go({ name: 'wishlist' }, 'root') },
+        { icon: 'store', label: 'Following', sub: s.follows.length + (s.follows.length === 1 ? ' maker' : ' makers'), go: () => this.go({ name: 'makers' }, 'root') },
+        { icon: 'shopping-bag', label: 'Cart', sub: cartCount + (cartCount === 1 ? ' item' : ' items'), go: () => this.go({ name: 'cart' }) },
+      ],
+      signOut: () => this.signOut(),
+      authOpen: !!s.auth, closeAuth: () => this.setState({ auth: null }),
+      authTitle: { signin: 'Welcome back', register: 'Join FORME', reset: 'Reset your password', resetSent: 'Check your inbox' }[s.auth] || '',
+      authDesc: s.authReason === 'checkout' && (s.auth === 'signin' || s.auth === 'register') ? 'Sign in to check out — your cart stays as it is.' : s.auth === 'register' ? 'Save pieces, follow makers and check out faster.' : s.auth === 'reset' ? 'We’ll email you a link to choose a new one.' : s.auth === 'signin' ? 'Sign in to see your orders, saved pieces and makers.' : '',
+      authTabs: s.auth === 'signin' || s.auth === 'register',
+      isSignin: s.auth === 'signin', isRegister: s.auth === 'register', isReset: s.auth === 'reset', isResetSent: s.auth === 'resetSent',
+      showAuthForm: s.auth !== 'resetSent', showPassword: s.auth !== 'reset',
+      toSignin: () => this.openAuth('signin', s.authReason), toRegister: () => this.openAuth('register', s.authReason), toReset: () => this.openAuth('reset'),
+      tabSigninBg: s.auth === 'signin' ? 'var(--surface)' : 'transparent', tabSigninShadow: s.auth === 'signin' ? 'var(--shadow-1)' : 'none',
+      tabRegisterBg: s.auth === 'register' ? 'var(--surface)' : 'transparent', tabRegisterShadow: s.auth === 'register' ? 'var(--shadow-1)' : 'none',
+      authSubmit: (e) => this.authSubmit(e),
+      af: {
+        ...s.af,
+        onName: (e) => this.setAf('name', e.target.value), onEmail: (e) => this.setAf('email', e.target.value), onPassword: (e) => this.setAf('password', e.target.value), onLetters: (v) => this.setAf('letters', v),
+        errName: s.afErr.name || undefined, errEmail: s.afErr.email || undefined, errPassword: s.afErr.password || undefined,
+        hasFormErr: !!s.afErr.form, formErr: s.afErr.form,
+        errActionLabel: s.afErr.formAction === 'register' ? 'Create one' : 'Sign in instead',
+        errAction: () => this.setState((st) => ({ auth: st.afErr.formAction, afErr: {} })),
+        pwType: s.showPw ? 'text' : 'password', pwAuto: s.auth === 'register' ? 'new-password' : 'current-password',
+        pwPlaceholder: s.auth === 'register' ? 'At least 8 characters' : 'Your password',
+        pwHint: s.auth === 'signin' && !s.afErr.password ? 'Demo: demo@forme.store / forme1234' : undefined,
+        pwToggle: React.createElement('button', { type: 'button', onClick: () => this.setState((st) => ({ showPw: !st.showPw })), style: { all: 'unset', cursor: 'pointer', fontSize: 13, color: 'var(--text-secondary)' } }, s.showPw ? 'Hide' : 'Show'),
+        busy: s.afBusy, btnVariant: s.auth === 'reset' ? 'primary' : 'accent',
+        submitLabel: s.afBusy ? 'One moment…' : s.auth === 'register' ? 'Create account' : s.auth === 'reset' ? 'Send reset link' : 'Sign in',
+      },
+      onFooter: (l) => footerGo(l),
+      _unused: (l) => { const c = D.CATS.find((x) => x.label === l); if (c) return this.go({ name: 'category', id: c.id }); if (l === 'Brands') return this.go({ name: 'makers' }); if (l === 'Journal') return this.go({ name: 'maker', id: 'kiln' }); if (l === 'Order status') return s.user ? this.go({ name: 'account' }) : this.openAuth('signin'); if (['Shipping', 'Returns', 'Care guides', 'Contact', 'About'].includes(l)) return this.go({ name: 'help' }); this.toast({ message: l + ' isn’t part of this prototype.' }); },
+      footerCols: [['Shop', ['New this week', 'Furniture', 'Lighting', 'Collections']], ['FORME', ['About', 'Journal', 'Makers', 'Sell on FORME']], ['Help', ['Shipping', 'Returns', 'Order status', 'Contact']], ['Social', ['Instagram', 'Pinterest']]].map(([title, links]) => ({ title, links: links.map((l) => ({ label: l, go: () => footerGo(l) })) })),
+      footerLegal: ['Privacy', 'Terms', 'United States · USD'].map((l) => ({ label: l, go: () => footerGo(l) })),
+      showTabs: !(isProduct || r.name === 'checkout'),
+      navCats: [{ id: 'new', label: 'New this week' }, ...D.CATS, { id: 'browse', label: 'Collections' }].map((c) => { const on = c.id === 'browse' ? r.name === 'browse' || r.name === 'collection' : navActive === c.id; return { label: c.label, current: on ? 'page' : undefined, deco: on ? 'underline' : 'none', go: () => this.go(c.id === 'browse' ? { name: 'browse' } : { name: 'category', id: c.id }) }; }),
+      isBrowse: r.name === 'browse', isHelp: r.name === 'help',
+      browseCats: D.CATS.map((c) => ({ label: c.label, count: c.count + (c.count === 1 ? ' piece' : ' pieces'), src: (this.SUBS[c.id] || [[0, 0, 'assets/cat-' + c.id + '.png']])[0][2], open: () => this.go({ name: 'category', id: c.id }) })),
+      browseColls: D.COLLECTIONS.map((c) => ({ ...c, src: D.byId[c.items[0]].image, countLabel: c.items.length + ' pieces', open: () => this.go({ name: 'collection', id: c.id }) })),
+      helpTopics: [
+        { title: 'Shipping', body: 'Orders over $' + freeAt + ' ship free; otherwise standard delivery is $12. Most pieces ship from the maker within 2–4 working days. Furniture is delivered to the room of your choice by a two-person crew, and we’ll call to agree a date.' },
+        { title: 'Returns', body: 'You have 30 days from delivery to return anything unused, in its original packaging. Returns are free. We collect furniture; everything else goes back with a prepaid label. Refunds reach your card within five working days of the maker receiving it.' },
+        { title: 'Care and repair', body: 'Every product page lists how to look after the piece. Many of our makers repair what they make. Write to us and we’ll put you in touch.' },
+        { title: 'Contact', body: 'hello@forme.store. A person replies within one working day, Monday to Friday, 9–6 CET.' },
+      ],
+
+      isHome: r.name === 'home', showFloating: this.props.floatingCard ?? true,
+      heroProduct: this.pc(D.byId.lounge),
+      popular: ['Travertine', 'Linen', 'Walnut', 'Studio Ferro'].map(term),
+      catRows, hoverCat,
+      kiln: kilnVM, openKiln: kilnVM.open,
+      kilnProducts: D.PRODUCTS.filter((p) => p.brandId === 'kiln').map((p) => this.pc(p)),
+      kilnTrio: ['carafe', 'teapot', 'bowl'].map((id) => { const p = D.byId[id]; return { ...p, priceLabel: '$' + fmt(p.price), open: () => this.go({ name: 'product', id }) }; }),
+      feature: { open: () => this.go({ name: 'product', id: 'sofa' }), add: () => this.addToCart(D.byId.sofa) },
+      warm: (() => { const c = D.COLLECTIONS[0], it = (id) => { const p = D.byId[id]; return { ...p, priceLabel: '$' + fmt(p.price), open: () => this.go({ name: 'product', id }) }; }; return { count: c.items.length + ' pieces', open: () => this.go({ name: 'collection', id: c.id }), a: it('halo'), b: it('pendant'), c: it('sconce'), d: it('lantern') }; })(),
+      materials: [['Travertine', 'p-candle'], ['Oak', 'p-sideboard'], ['Linen', 'p-sheets'], ['Stoneware', 'p-carafe'], ['Glass', 'p-vase'], ['Wool', 'p-rug']].map(([m, img]) => ({ label: m, src: 'assets/hd/' + img + '.jpg', types: [...new Set(D.PRODUCTS.filter((p) => p.material === m).map((p) => p.type))].slice(0, 2).join(', '), go: () => this.go({ name: 'search', q: m }) })),
+      collLead: { ...D.COLLECTIONS[0], countLabel: D.COLLECTIONS[0].items.length + ' pieces', open: () => this.go({ name: 'collection', id: D.COLLECTIONS[0].id }) },
+      collRest: D.COLLECTIONS.slice(1).map((c) => ({ ...c, countLabel: c.items.length + ' pieces', open: () => this.go({ name: 'collection', id: c.id }) })),
+      newProducts: [...D.PRODUCTS].sort((a, b) => a.added - b.added).slice(0, 8).map((p) => this.pc(p)),
+      railPrev: () => this.rail.current && this.rail.current.scrollBy({ left: -340 * 2 }),
+      railNext: () => this.rail.current && this.rail.current.scrollBy({ left: 340 * 2 }),
+
+      showMakers: r.name === 'makers',
+      makersTop: r.name === 'makers' ? '40px' : 'var(--section-gap)',
+      makersSize: r.name === 'makers' ? 'var(--fs-display)' : 'var(--fs-h1)',
+      makerRows: Object.values(D.B).slice(0, r.name === 'makers' ? 8 : 5).map((b) => this.makerVM(b)),
+
+      subscribed: s.subscribed, notSubscribed: !s.subscribed, email: s.email,
+      onEmail: (e) => this.setState({ email: e.target.value }),
+      subscribe: (e) => { e.preventDefault(); this.setState({ subscribed: true }); },
+
+      isListing: !!listing, listing: listing || {}, crumbs: isProduct ? [home, { label: D.catById[prod.cat || 'lighting'].label, onClick: () => this.go({ name: 'category', id: prod.cat }) }, { label: prod.name }] : crumbs,
+      results: results.map((p) => this.pc(p)), hasResults: results.length > 0, noResults: !!listing && results.length === 0, resultCount: results.length,
+      showMakerFilter: makerIds.length > 1,
+      makerOpts: makerIds.map((id) => ({ value: id, label: D.B[id].name, count: base.filter((p) => p.brandId === id).length })),
+      priceOpts: Object.entries(priceLabels).map(([value, label]) => ({ value, label })),
+      fMakers: s.fMakers, fPrice: s.fPrice, sort: s.sort,
+      onMakers: (v) => this.setState({ fMakers: v }), onPrice: (v) => this.setState({ fPrice: v }), onSort: (v) => this.setState({ sort: v }),
+      activeTags, hasFilters: activeTags.length > 0, clearFilters: () => this.setState({ fMakers: [], fPrice: [], fType: [], fMat: [], fCol: [] }),
+      lhAlign: r.name === 'category' ? 'flex-start' : 'center', lhText: r.name === 'category' ? 'left' : 'center', lhMargin: r.name === 'category' ? '24px 0 0' : '32px auto 0', lhSize: r.name === 'category' ? 'var(--fs-h1)' : 'var(--fs-display)',
+      colOpts, showCol: colOpts.length > 1, fCol: s.fCol, onCol: (v) => this.setState({ fCol: v }),
+      typeOpts, matOpts, showType: typeOpts.length > 1, showMat: matOpts.length > 1, fType: s.fType, fMat: s.fMat, onType: (v) => this.setState({ fType: v }), onMat: (v) => this.setState({ fMat: v }),
+      filterBtnLabel: activeTags.length ? 'Filters · ' + activeTags.length : 'Filters',
+      sheetOpen: s.sheet, openSheet: () => this.setState({ sheet: true }), closeSheet: () => this.setState({ sheet: false }),
+      showResultsLabel: 'Show ' + results.length + ' pieces',
+
+      ...(isProduct ? this.reviewsVM(prod, D) : { prodReviews: [], revDots: [], revPrev: null, revNext: null }),
+      isProduct, prod, gallery, maker, related, relatedTitle,
+      qty: s.qty, onQty: (v) => this.setState({ qty: v }), onVariant: (v) => this.setState({ variant: v }),
+      addLabel: isProduct ? 'Add to cart · $' + fmt(prod.price * s.qty) : 'Add to cart',
+      addCurrent: () => isProduct && this.addToCart(D.byId[prod.id], s.qty, prod.variant || 'Standard'),
+
+      isSearch: r.name === 'search', searchQ: s.searchQ, onSearchChange: (v) => this.setState({ searchQ: v }),
+      suggest, hasSuggest: suggest.length > 0, searchEmptyQuery: !q, searchHasResults: !!q && searchRes.length > 0, searchNone: !!q && searchRes.length === 0,
+      searchResults: searchRes.map((p) => this.pc(p)),
+      searchCountLabel: searchRes.length + (searchRes.length === 1 ? ' piece' : ' pieces') + ' for “' + s.searchQ.trim() + '”',
+      searchNoneTitle: 'Nothing for “' + s.searchQ.trim() + '” — yet.',
+      recent: ['Travertine lamp', 'Linen robe', 'Oak'].map(term),
+
+      isCart, cartLines, cartHasItems: cartLines.length > 0, cartEmpty: cartLines.length === 0,
+      cartCountLabel: cartCount + (cartCount === 1 ? ' item' : ' items'), subtotal, freeAt, cartRows, shipFree,
+      shipStatus: shipFree ? 'Free shipping unlocked' : '$' + fmt(freeAt - subtotal) + ' away from free shipping',
+      shipNote: shipFree ? 'You’ve qualified for free shipping on this order.' : 'Orders over $' + fmt(freeAt) + ' ship free.',
+      shipNext: subtotal >= expressAt ? 'Free express shipping unlocked' : '$' + fmt(expressAt - subtotal) + ' to free express shipping',
+      shipPct: Math.min(100, subtotal / expressAt * 100) + '%', freePct: Math.min(100, subtotal / freeAt * 100) + '%',
+      shipLabel: shipFree ? 'Free' : '$12', subtotalLabel: '$' + fmt(subtotal), totalLabel: '$' + fmt(subtotal + (shipFree ? 0 : 12)),
+      cartTrust: [{ icon: 'rotate-ccw', text: 'Free returns within 30 days' }, { icon: 'shield-check', text: 'Secure checkout, no account needed' }, { icon: 'truck', text: 'Arrives ' + eta }],
+      makerNote: (() => { const n = new Set(s.cart.map((l) => D.byId[l.id].brandId)).size; return 'This order supports ' + n + ' independent ' + (n === 1 ? 'studio' : 'studios') + ' directly.'; })(),
+      checkout: () => { this.go({ name: 'checkout' }); this.setState((st) => ({ order: null, coErr: {}, co: { ...st.co, email: st.co.email || (st.user ? st.user.email : ''), name: st.co.name || (st.user ? st.user.name : '') } })); },
+      goBack: () => this.go(s.prev && !['cart', 'checkout'].includes(s.prev.name) ? s.prev : { name: 'category', id: 'new' }),
+      shipPaid: !shipFree,
+      ...(() => {
+        const shipCost = s.ship === 'express' ? 24 : (shipFree ? 0 : 12);
+        const items = s.cart.map((l) => { const p = D.byId[l.id]; return { image: p.image, name: p.name, meta: (l.variant && l.variant !== 'Standard' ? l.variant + ' · ' : '') + 'Qty ' + l.qty, total: '$' + fmt(p.price * l.qty) }; });
+        const totalLabel = '$' + fmt(subtotal + shipCost);
+        const fld = (k, label, o = {}) => ({ label, value: s.co[k], type: o.type || 'text', auto: o.auto || 'on', ph: o.ph || '', span: o.span || 'span 2', error: s.coErr[k] || undefined, onChange: (e) => { const v = e.target.value; this.setState((st) => ({ co: { ...st.co, [k]: v }, coErr: { ...st.coErr, [k]: null } })); } });
+        const opt = (id, label, sub, price) => { const on = s.ship === id; return { label, sub, price, on, pick: () => this.setState({ ship: id }), border: on ? 'var(--text-primary)' : 'var(--border)', ring: on ? '5px solid var(--text-primary)' : '1.5px solid var(--stone-400)' }; };
+        return {
+          isCheckout: r.name === 'checkout', coDone: r.name === 'checkout' && !!s.order, coForm: r.name === 'checkout' && !s.order && s.cart.length > 0, coEmpty: r.name === 'checkout' && !s.order && s.cart.length === 0,
+          order: s.order || {}, coItems: items, coBusy: s.coBusy,
+          coContact: [fld('email', 'Email', { type: 'email', auto: 'email', ph: 'you@example.com' })],
+          coAddress: [fld('name', 'Full name', { auto: 'name' }), fld('address', 'Street address', { auto: 'street-address' }), fld('city', 'City', { auto: 'address-level2', span: 'span 1' }), fld('postcode', 'Postcode', { auto: 'postal-code', span: 'span 1' }), fld('country', 'Country', { auto: 'country-name' })],
+          coPay: [fld('card', 'Card number', { auto: 'cc-number', ph: '1234 5678 9012 3456' }), fld('exp', 'Expiry', { auto: 'cc-exp', ph: 'MM / YY', span: 'span 1' }), fld('cvc', 'Security code', { auto: 'cc-csc', ph: '123', span: 'span 1' })],
+          shipOpts: [opt('standard', 'Standard', 'Arrives ' + eta, shipFree ? 'Free' : '$12'), opt('express', 'Express', 'Arrives ' + fd(1) + ' – ' + fd(2), '$24')],
+          coShipName: s.ship === 'express' ? 'Express shipping' : 'Shipping', coShipLabel: shipCost ? '$' + shipCost : 'Free', coTotalLabel: totalLabel,
+          placeLabel: s.coBusy ? 'Placing order…' : 'Place order · ' + totalLabel,
+          placeOrder: (e) => this.placeOrder(e, { items, totalLabel, eta: s.ship === 'express' ? fd(1) + ' – ' + fd(2) : eta }),
+          coSignin: () => this.openAuth('signin'),
+          coRegister: () => { this.setState((st) => ({ af: { ...st.af, name: st.co.name, email: st.co.email } })); this.openAuth('register'); },
+        };
+      })(),
+      showSaved: isCart || isWish, savedTop: isWish ? '40px' : 'var(--section-gap)', savedSize: isWish ? 'var(--fs-h1)' : 'var(--fs-h2)',
+      wishItems, wishHasItems: wishItems.length > 0, wishEmpty: wishItems.length === 0,
+      wishCountLabel: wishItems.length + (wishItems.length === 1 ? ' piece' : ' pieces'),
+
+      toasts: s.toasts.map((t) => ({ ...t, act: () => { t.onAction && t.onAction(); this.dismiss(t.id); }, close: () => this.dismiss(t.id) })),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--bg);color:var(--text-primary);font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-body);letter-spacing:var(--ls-body);font-weight:var(--fw-regular)}
+h1,h2,h3,h4,p,figure{margin:0}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;letter-spacing:inherit}
+a{color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--accent)}
+::selection{background:var(--accent-wash);color:var(--text-primary)}
+
+/* Responsive container. Every FORME page wraps in .fm-app; fluid (cqi) tokens scale against it and components switch layout below 760px. */
+.fm-app{container-type:inline-size;container-name:fm;position:relative}
+
+/* Type roles */
+.fm-display{font-size:var(--fs-display);line-height:var(--lh-display);letter-spacing:var(--ls-display);font-weight:var(--fw-medium);text-wrap:balance}
+.fm-h1{font-size:var(--fs-h1);line-height:var(--lh-h1);letter-spacing:var(--ls-h1);font-weight:var(--fw-medium);text-wrap:balance}
+.fm-h2{font-size:var(--fs-h2);line-height:var(--lh-h2);letter-spacing:var(--ls-h2);font-weight:var(--fw-medium);text-wrap:balance}
+.fm-h3{font-size:var(--fs-h3);line-height:var(--lh-h3);letter-spacing:var(--ls-h3);font-weight:var(--fw-medium)}
+.fm-body-lg{font-size:var(--fs-body-lg);line-height:var(--lh-body-lg);letter-spacing:var(--ls-body-lg);text-wrap:pretty}
+.fm-body{font-size:var(--fs-body);line-height:var(--lh-body);letter-spacing:var(--ls-body);text-wrap:pretty}
+.fm-body-sm{font-size:var(--fs-body-sm);line-height:var(--lh-body-sm);letter-spacing:var(--ls-body-sm)}
+.fm-caption{font-size:var(--fs-caption);line-height:var(--lh-caption);letter-spacing:var(--ls-caption);color:var(--text-muted)}
+.fm-label{font-family:var(--font-mono);font-size:var(--fs-label);line-height:var(--lh-label);letter-spacing:var(--ls-label);text-transform:uppercase;font-weight:var(--fw-medium)}
+.fm-price{font-size:var(--fs-price);line-height:var(--lh-price);letter-spacing:var(--ls-price);font-weight:var(--fw-medium);font-variant-numeric:tabular-nums}
+.fm-meta{font-size:var(--fs-meta);line-height:var(--lh-meta);letter-spacing:var(--ls-meta);color:var(--text-secondary)}
+.fm-secondary{color:var(--text-secondary)}.fm-muted{color:var(--text-muted)}
+
+/* Layout helpers */
+.fm-container{width:100%;max-width:var(--content-max);margin:0 auto;padding:0 var(--gutter)}
+.fm-section{padding-top:var(--section-gap)}
+.fm-scroll-x{display:flex;gap:var(--space-2);overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.fm-scroll-x::-webkit-scrollbar{display:none}
+.fm-scroll-x > *{scroll-snap-align:start;flex-shrink:0}
+.fm-grid{display:grid;grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));column-gap:var(--grid-gap);row-gap:var(--grid-gap-row)}
+@container fm (max-width:760px){.fm-grid{grid-template-columns:repeat(var(--cols-m,2),minmax(0,1fr))}}
+/* Visibility by container width (require an .fm-app ancestor) */
+@container fm (min-width:761px){.fm-show-m{display:none !important}}
+@container fm (max-width:760px){.fm-hide-m{display:none !important}}

@@ -1,0 +1,19 @@
+:root{
+--font-sans:"Geist","Helvetica Neue",Helvetica,system-ui,sans-serif;
+--font-mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,monospace;
+--fw-regular:400;/* @kind font */--fw-medium:500;/* @kind font */--fw-semibold:600;/* @kind font */
+
+/* Size / line-height / tracking. Headline sizes are fluid against the .fm-app container: 390 → 1440. */
+--fs-display:clamp(46px,6.67cqi,96px);/* @kind font */--lh-display:0.94;/* @kind font */--ls-display:-0.055em;/* @kind font */
+--fs-h1:clamp(36px,4.17cqi,60px);/* @kind font */--lh-h1:1;/* @kind font */--ls-h1:-0.045em;/* @kind font */
+--fs-h2:clamp(28px,2.78cqi,40px);/* @kind font */--lh-h2:1.05;/* @kind font */--ls-h2:-0.04em;/* @kind font */
+--fs-h3:clamp(20px,1.67cqi,24px);/* @kind font */--lh-h3:1.15;/* @kind font */--ls-h3:-0.03em;/* @kind font */
+--fs-body-lg:clamp(17px,1.25cqi,18px);/* @kind font */--lh-body-lg:1.45;/* @kind font */--ls-body-lg:-0.016em;/* @kind font */
+--fs-body:16px;--lh-body:1.45;/* @kind font */--ls-body:-0.012em;/* @kind font */
+--fs-body-sm:14px;--lh-body-sm:1.4;/* @kind font */--ls-body-sm:-0.008em;/* @kind font */
+--fs-caption:12px;--lh-caption:1.33;/* @kind font */--ls-caption:-0.004em;/* @kind font */
+--fs-label:11px;--lh-label:1.2;/* @kind font */--ls-label:0.06em;/* @kind font */
+--fs-button:15px;--lh-button:1;/* @kind font */--ls-button:-0.012em;/* @kind font */
+--fs-price:16px;--lh-price:1.2;/* @kind font */--ls-price:-0.012em;/* @kind font */
+--fs-meta:13px;--lh-meta:1.35;/* @kind font */--ls-meta:-0.006em;/* @kind font */
+}
